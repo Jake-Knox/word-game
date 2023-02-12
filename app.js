@@ -629,7 +629,6 @@ const tile_A2Check = () => {
     // diag / // line indexes = 1,5
     inputArray = [charArray[1], charArray[5]];
     createChecks(inputArray);
-    
 }
 const tile_A3Check = () => {
     let inputArray = "";
@@ -657,10 +656,41 @@ const tile_A3Check = () => {
     createChecks(inputArray);
 }
 const tile_A4Check = () => {
-    
+    let inputArray = "";
+    // left right // line indexes = 0,1,2,3
+    inputArray = [charArray[3], charArray[2], charArray[1], charArray[0]];
+    createChecks(inputArray);
+    // 3,4
+    inputArray = [charArray[3], charArray[4]];
+    createChecks(inputArray);
+    // 1,2,3,4
+    inputArray = charArray[1],charArray[2],charArray[3],charArray[4];
+    strictCheck(charArray[3], inputArray);
+    // 0,1,2,3,4
+    inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
+    strictCheck(charArray[3], inputArray);
+
+    // diag \ // line indexes = 3,9
+    inputArray = [charArray[3], charArray[9]];
+    createChecks(inputArray);
+     // up down // line indexes = 3,8,13,18,23
+    inputArray = [charArray[3], charArray[8], charArray[13], charArray[18], charArray[23]];
+    createChecks(inputArray);
+    // diag / // line indexes = 3,7,11,15
+    inputArray = [charArray[3], charArray[7], charArray[11], charArray[15]];
+    createChecks(inputArray);
 }
 const tile_A5Check = () => {
-    
+    let inputArray = "";
+    // left right // line indexes = 4,3,2,1,0
+    inputArray = [charArray[4], charArray[3], charArray[2], charArray[1], charArray[0]];
+    createChecks(inputArray);
+    // up down // line indexes = 4,9,14,19,24
+    inputArray = [charArray[4], charArray[9], charArray[14], charArray[19], charArray[24]];
+    createChecks(inputArray);
+    // diag / // line indexes = 4,8,12,16,20
+    inputArray = [charArray[4], charArray[8], charArray[12], charArray[16], charArray[20]];
+    createChecks(inputArray);
 }
 
 // ROW B
