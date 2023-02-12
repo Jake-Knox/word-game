@@ -614,7 +614,7 @@ const tile_A2Check = () => {
     inputArray = [charArray[1], charArray[0]];
     createChecks(inputArray);
     // 0,1,2,3
-    inputArray = charArray[0],charArray[1],charArray[2],charArray[3];
+    inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
     strictCheck(charArray[1], inputArray);
     // 0,1,2,3,4
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
@@ -635,7 +635,7 @@ const tile_A3Check = () => {
     // left right
     inputArray = [charArray[2], charArray[3], charArray[4]];
     createChecks(inputArray);
-    inputArray = [charArray[0], charArray[1], charArray[2]];
+    inputArray = [charArray[2], charArray[1], charArray[0]];
     createChecks(inputArray);
 
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
@@ -664,7 +664,7 @@ const tile_A4Check = () => {
     inputArray = [charArray[3], charArray[4]];
     createChecks(inputArray);
     // 1,2,3,4
-    inputArray = charArray[1],charArray[2],charArray[3],charArray[4];
+    inputArray = [charArray[1],charArray[2],charArray[3],charArray[4]];
     strictCheck(charArray[3], inputArray);
     // 0,1,2,3,4
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
@@ -857,14 +857,20 @@ const createChecks = (lineChars) => {
 
 
 const strictCheck = (newChar, lineChars) => {
+
+    // console.log(`line length: ${lineChars.length}`)
+    //console.log(lineChars)
+
     let input = "";
     let missing = false;
-    for(let char in lineChars)
+
+    for(let i=0; i<lineChars.length; i++)
     {
-        if (char == ""){
+        if (lineChars[i] == ""){
             missing = true
         }
     }
+    //console.log(missing)
 
     if(missing != true)
     {
