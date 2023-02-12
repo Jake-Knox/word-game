@@ -146,12 +146,86 @@ const endTurn = () => {
 
         // perform check against each tile :/
         switch(lastTileUsed)
-        {
+        {   
+            // ROW A
             case tileArray[0]:
                 tile_A1Check();
             break;
             case tileArray[1]:
                 tile_A2Check();
+            break;
+            case tileArray[2]:
+                tile_A3Check();
+            break;
+            case tileArray[3]:
+                tile_A4Check();
+            break;
+            case tileArray[4]:
+                tile_A5Check();
+            break;
+            // ROW B
+            case tileArray[5]:
+                tile_B1Check();
+            break;
+            case tileArray[6]:
+                tile_B2Check();
+            break;
+            case tileArray[7]:
+                tile_B3Check();
+            break;
+            case tileArray[8]:
+                tile_B4Check();
+            break;
+            case tileArray[9]:
+                tile_B5Check();
+            break;
+            // ROW C
+            case tileArray[10]:
+                tile_C1Check();
+            break;
+            case tileArray[11]:
+                tile_C2Check();
+            break;
+            case tileArray[12]:
+                tile_C3Check();
+            break;
+            case tileArray[13]:
+                tile_C4Check();
+            break;
+            case tileArray[14]:
+                tile_C5Check();
+            break;
+            // ROW D
+            case tileArray[15]:
+                tile_D1Check();
+            break;
+            case tileArray[16]:
+                tile_D2Check();
+            break;
+            case tileArray[17]:
+                tile_D3Check();
+            break;
+            case tileArray[18]:
+                tile_D4Check();
+            break;
+            case tileArray[19]:
+                tile_D5Check();
+            break;
+            // ROW E
+            case tileArray[20]:
+                tile_E1Check();
+            break;
+            case tileArray[21]:
+                tile_E2Check();
+            break;
+            case tileArray[22]:
+                tile_E3Check();
+            break;
+            case tileArray[23]:
+                tile_E4Check();
+            break;
+            case tileArray[24]:
+                tile_E5Check();
             break;
 
             default:
@@ -188,6 +262,7 @@ const checkString = (newChar, inputStr) => {
 
     //console.log(`input: ${newChar} - entering switch`);
 
+    // code has been collapsed - use arrow to see
     switch(newChar)
     {
         case "A":
@@ -204,73 +279,278 @@ const checkString = (newChar, inputStr) => {
                 }
             }
         break;
-        case "E":
-            //console.log(`checking for E`)
+        case "B":           
+            for(const entry of dictIncludesB)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "C":           
+            for(const entry of dictIncludesC)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "D":           
+            for(const entry of dictIncludesD)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "E":           
             for(const entry of dictIncludesE)
-            {
-                //console.log(`Checking ${inputStr} against ${entry}`)
+            {                
                 if(inputStr == entry){
                     logWord(inputStr);
                     console.log(`${inputStr} is a match!`);
                 }
-                else{
-                    //console.log(`no match`)
+                else{                   
                 }
             }
         break;
-        case "I":
-            //console.log(`checking for I`)
+        case "F":           
+            for(const entry of dictIncludesF)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "G":           
+            for(const entry of dictIncludesG)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "H":           
+            for(const entry of dictIncludesH)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "I":           
             for(const entry of dictIncludesI)
-            {
-                //console.log(`Checking ${inputStr} against ${entry}`)
+            {                
                 if(inputStr == entry){
                     logWord(inputStr);
                     console.log(`${inputStr} is a match!`);
                 }
-                else{
-                    //console.log(`no match`)
+                else{                   
                 }
             }
         break;
-        case "O":
-            //console.log(`checking for O`)
+        case "J":           
+            for(const entry of dictIncludesJ)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "K":           
+            for(const entry of dictIncludesK)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "L":           
+            for(const entry of dictIncludesL)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "M":           
+            for(const entry of dictIncludesM)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "N":           
+            for(const entry of dictIncludesN)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "O":            
             for(const entry of dictIncludesO)
-            {
-                //console.log(`Checking ${inputStr} against ${entry}`)
+            {                
                 if(inputStr == entry){
                     logWord(inputStr);
                     console.log(`${inputStr} is a match!`);
                 }
-                else{
-                    //console.log(`no match`)
+                else{                    
                 }
             }
         break;
-        case "T":
-            //console.log(`checking for O`)
+        case "P":           
+            for(const entry of dictIncludesP)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "Q":           
+            for(const entry of dictIncludesQ)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "R":           
+            for(const entry of dictIncludesR)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "S":           
+            for(const entry of dictIncludesS)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "T":            
             for(const entry of dictIncludesT)
-            {
-                //console.log(`Checking ${inputStr} against ${entry}`)
+            {                
                 if(inputStr == entry){
                     logWord(inputStr);
                     console.log(`${inputStr} is a match!`);
                 }
-                else{
-                    //console.log(`no match`)
+                else{                   
                 }
             }
         break;
-        case "U":
-            //console.log(`checking for U`)
+        case "U":           
             for(const entry of dictIncludesU)
-            {
-                //console.log(`Checking ${inputStr} against ${entry}`)
+            {                
                 if(inputStr == entry){
                     logWord(inputStr);
                     console.log(`${inputStr} is a match!`);
                 }
-                else{
-                    //console.log(`no match`)
+                else{                    
+                }
+            }
+        break;
+        case "V":           
+            for(const entry of dictIncludesV)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "W":           
+            for(const entry of dictIncludesW)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "X":           
+            for(const entry of dictIncludesX)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "Y":           
+            for(const entry of dictIncludesY)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
+                }
+            }
+        break;
+        case "Z":           
+            for(const entry of dictIncludesZ)
+            {                
+                if(inputStr == entry){
+                    logWord(inputStr);
+                    console.log(`${inputStr} is a match!`);
+                }
+                else{                   
                 }
             }
         break;
@@ -312,124 +592,69 @@ const logWord = (word) => {
 
 // ROW A
 
-// was 73 lines
-// const tile_A1Check = () => {
-//     let input = "";
-//     if(charArray[1] != ""){        
-//         checkString(charArray[0], input);
-//         input = charArray[1].concat(charArray[0]);
-//         checkString(charArray[0], input);
-//         if(charArray[2] != ""){
-//             input = charArray[0].concat(charArray[1],charArray[2]);
-//             checkString(charArray[0], input);
-//             input = charArray[2].concat(charArray[1],charArray[0]);
-//             checkString(charArray[0], input);
-//             if(charArray[3] != ""){
-//                 input = charArray[0].concat(charArray[1],charArray[2],charArray[3]);
-//                 checkString(charArray[0], input);
-//                 input = charArray[3].concat(charArray[2].charArray[1],charArray[0]);
-//                 checkString(charArray[0], input);
-//                 if(charArray[4] != ""){             
-//                     input = charArray[0].concat(charArray[1],charArray[2],charArray[3],charArray[4]);
-//                     checkString(charArray[0], input);
-//                     input = charArray[4].concat(charArray[3],charArray[2].charArray[1],charArray[0]);
-//                     checkString(charArray[0], input);
-//                 }
-//             }
-//         }        
-//     }    
-//     if(charArray[6] != ""){   
-//         input = charArray[0].concat(charArray[6]);
-//         checkString(charArray[0], input);        
-//         input = charArray[6].concat(charArray[0]);
-//         checkString(charArray[0], input);      
-//         if(charArray[12] != ""){ 
-//             input = charArray[0].concat(charArray[6],charArray[12]);
-//             checkString(charArray[0], input);        
-//             input = charArray[12].concat(charArray[6],charArray[0]);
-//             checkString(charArray[0], input);           
-//             if(charArray[18] != ""){
-//                 input = charArray[0].concat(charArray[6],charArray[12],charArray[18]);
-//                 checkString(charArray[0], input);        
-//                 input = charArray[18].concat(charArray[12],charArray[6],charArray[0]);
-//                 checkString(charArray[0], input);             
-//                 if(charArray[24] != ""){
-//                     input = charArray[0].concat(charArray[6],charArray[12],charArray[18],charArray[24]);
-//                     checkString(charArray[0], input);        
-//                     input = charArray[24].concat(charArray[18],charArray[12],charArray[6],charArray[0]);
-//                     checkString(charArray[0], input); 
-//                 }
-//             }
-//         }        
-//     }
-//     if(charArray[5] != ""){ 
-//         input = charArray[0].concat(charArray[5]);
-//         checkString(charArray[0], input);        
-//         input = charArray[5].concat(charArray[0]);
-//         checkString(charArray[0], input);       
-//         if(charArray[10] != ""){
-//             input = charArray[0].concat(charArray[5],charArray[10]);
-//             checkString(charArray[0], input);        
-//             input = charArray[10].concat(charArray[5],charArray[0]);
-//             checkString(charArray[0], input);        
-//             if(charArray[15] != ""){ 
-//                 input = charArray[0].concat(charArray[5],charArray[10],charArray[15]);
-//                 checkString(charArray[0], input);        
-//                 input = charArray[15].concat(charArray[10],charArray[5],charArray[0]);
-//                 checkString(charArray[0], input);          
-//                 if(charArray[20] != ""){
-//                     input = charArray[0].concat(charArray[5],charArray[10],charArray[15],charArray[20]);
-//                     checkString(charArray[0], input);        
-//                     input = charArray[20].concat(charArray[15],charArray[10],charArray[5],charArray[0]);
-//                     checkString(charArray[0], input); 
-//                 }
-//             }            
-//         }      
-//     }     
-// }
-
-    //now 9 lines
 const tile_A1Check = () => {    
     let inputArray = "";
-    // left -> right
-    // line indexes = 0,1,2,3,4
+    // left <-> right // line indexes = 0,1,2,3,4
     inputArray = [charArray[0], charArray[1], charArray[2], charArray[3], charArray[4]];
     createChecks(inputArray);
-    // topLeft -> bottomRight
-    // line indexes = 0,6,12,18,24
+    // topLeft <\> bottomRight // line indexes = 0,6,12,18,24
     inputArray = [charArray[0], charArray[6], charArray[12], charArray[18], charArray[24]];
     createChecks(inputArray);
-    // top -> bottom
-    // line indexes = 0,5,10,15,20
+    // top ^-V bottom // line indexes = 0,5,10,15,20
     inputArray = [charArray[0], charArray[5], charArray[10], charArray[15], charArray[20]];
     createChecks(inputArray);
 }
 
 const tile_A2Check = () => {    
     let inputArray = "";
-    // left -> right
-    // line indexes = 1,2,3,4
+    // left right // line indexes = 1,2,3,4
     inputArray = [charArray[1], charArray[2], charArray[3], charArray[4]];
     createChecks(inputArray);
-    // topLeft -> bottomRight
-    // line indexes = 1,7,13,19
-    inputArray = [charArray[1], charArray[7], charArray[13], charArray[19]];
-    createChecks(inputArray);
-    // top -> bottom
-    // line indexes = 1,6,11,16,21
-    inputArray = [charArray[1], charArray[6], charArray[11], charArray[16], charArray[21]];
-    createChecks(inputArray);
-    // topRight -> bottomLeft
-    // line indexes = 1,5
-    inputArray = [charArray[1], charArray[5]];
-    createChecks(inputArray);
-    // right -> left 
-    // line indexes = 1,0
+    // 1,0
     inputArray = [charArray[1], charArray[0]];
     createChecks(inputArray);
+    // 0,1,2,3
+    inputArray = charArray[0],charArray[1],charArray[2],charArray[3];
+    strictCheck(charArray[1], inputArray);
+    // 0,1,2,3,4
+    inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
+    strictCheck(charArray[1], inputArray);
+
+    // diag \ // line indexes = 1,7,13,19
+    inputArray = [charArray[1], charArray[7], charArray[13], charArray[19]];
+    createChecks(inputArray);
+     // up down // line indexes = 1,6,11,16,21
+    inputArray = [charArray[1], charArray[6], charArray[11], charArray[16], charArray[21]];
+    createChecks(inputArray);
+    // diag / // line indexes = 1,5
+    inputArray = [charArray[1], charArray[5]];
+    createChecks(inputArray);
+    
 }
 const tile_A3Check = () => {
-    
+    let inputArray = "";
+    // left right
+    inputArray = [charArray[2], charArray[3], charArray[4]];
+    createChecks(inputArray);
+    inputArray = [charArray[0], charArray[1], charArray[2]];
+    createChecks(inputArray);
+
+    inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
+    strictCheck(charArray[2], inputArray);
+    inputArray = [charArray[1],charArray[2],charArray[3],charArray[4]];
+    strictCheck(charArray[2], inputArray);
+    inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
+    strictCheck(charArray[2], inputArray);
+
+    // diag \
+    inputArray = [charArray[2], charArray[8], charArray[14]];
+    createChecks(inputArray);
+    // up down
+    inputArray = [charArray[2], charArray[7], charArray[12], charArray[17], charArray[22]];
+    createChecks(inputArray);
+    // diag /
+    inputArray = [charArray[2], charArray[6], charArray[10]];
+    createChecks(inputArray);
 }
 const tile_A4Check = () => {
     
@@ -463,6 +688,8 @@ const tile_C2Check = () => {
     
 }
 const tile_C3Check = () => {
+    let inputArray = "";
+    // line indexes = 0,1,2,3,4
     
 }
 const tile_C4Check = () => {
@@ -599,7 +826,55 @@ const createChecks = (lineChars) => {
 }
 
 
+const strictCheck = (newChar, lineChars) => {
+    let input = "";
+    let missing = false;
+    for(let char in lineChars)
+    {
+        if (char == ""){
+            missing = true
+        }
+    }
 
+    if(missing != true)
+    {
+        switch (lineChars.length){
+            case 1:                
+                break;
+
+            case 2:
+                input = lineChars[0].concat(lineChars[1]);
+                checkString(newChar, input);
+                input = lineChars[1].concat(lineChars[0]);
+                checkString(newChar, input);
+                break;
+    
+            case 3:
+                input = lineChars[0].concat(lineChars[1],lineChars[2]);
+                checkString(newChar, input);
+                input = lineChars[2].concat(lineChars[1],lineChars[0]);
+                checkString(newChar, input);
+                break;
+    
+            case 4:
+                input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3]);
+                checkString(newChar, input);
+                input = lineChars[3].concat(lineChars[2],lineChars[1],lineChars[0]);
+                checkString(newChar, input);
+                break;
+            
+            case 5:
+                input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3],lineChars[4]);
+                checkString(newChar, input);
+                input = lineChars[4].concat(lineChars[3],lineChars[2],lineChars[1],lineChars[0]);
+                checkString(newChar, input);
+                break;
+                                                        
+            default:
+                //
+        }
+    }
+}
 
 
 
