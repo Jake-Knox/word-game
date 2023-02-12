@@ -1,4 +1,4 @@
-import { dictIncludesA, dictIncludesE, dictIncludesI, dictIncludesO, dictIncludesT, dictIncludesU } from "./iDictionary.js";
+import { dictIncludesA, dictIncludesB, dictIncludesC, dictIncludesD, dictIncludesE, dictIncludesF, dictIncludesG, dictIncludesH, dictIncludesI, dictIncludesJ, dictIncludesK, dictIncludesL, dictIncludesM, dictIncludesN, dictIncludesO, dictIncludesP, dictIncludesQ, dictIncludesR, dictIncludesS, dictIncludesT, dictIncludesU, dictIncludesV, dictIncludesW, dictIncludesX, dictIncludesY, dictIncludesZ } from "./iDictionary.js";
 //console.log(dictIncludesA);
 
 // console.log("game start");
@@ -417,7 +417,8 @@ const tile_A1Check = () => {
 }
 const tile_A2Check = () => {
     let input = "";
-    
+    let inputArray = "";
+
     // left -> right
     // line indexes = 1,2,3,4
     if(charArray[2] != ""){        
@@ -442,82 +443,47 @@ const tile_A2Check = () => {
         }
     }
 
-    // topLeft - bottomRight
+    // topLeft -> bottomRight
     // line indexes = 1,7,13,19
-    if(charArray[7] != ""){        
-        // 2 letter        
-        input = charArray[1].concat(charArray[7]);
-        checkString(charArray[1], input);        
-        input = charArray[7].concat(charArray[1]);
-        checkString(charArray[1], input);       
-        if(charArray[13] != ""){
-            // 3 letter
-            input = charArray[1].concat(charArray[7],charArray[13]);
-            checkString(charArray[1], input);        
-            input = charArray[13].concat(charArray[7],charArray[1]);
-            checkString(charArray[1], input);  
-            if(charArray[19] != ""){
-                // 4 letter
-                input = charArray[1].concat(charArray[7],charArray[13],charArray[19]);
-                checkString(charArray[1], input);        
-                input = charArray[19].concat(charArray[13],charArray[7],charArray[1]);
-                checkString(charArray[1], input); 
-            }
-        }
-    }
+    inputArray = [charArray[1], charArray[7], charArray[13], charArray[19]];
+    createChecks(inputArray);
 
-    // topLeft - bottomRight
+    // if(charArray[7] != ""){        
+    //     // 2 letter        
+    //     input = charArray[1].concat(charArray[7]);
+    //     checkString(charArray[1], input);        
+    //     input = charArray[7].concat(charArray[1]);
+    //     checkString(charArray[1], input);       
+    //     if(charArray[13] != ""){
+    //         // 3 letter
+    //         input = charArray[1].concat(charArray[7],charArray[13]);
+    //         checkString(charArray[1], input);        
+    //         input = charArray[13].concat(charArray[7],charArray[1]);
+    //         checkString(charArray[1], input);  
+    //         if(charArray[19] != ""){
+    //             // 4 letter
+    //             input = charArray[1].concat(charArray[7],charArray[13],charArray[19]);
+    //             checkString(charArray[1], input);        
+    //             input = charArray[19].concat(charArray[13],charArray[7],charArray[1]);
+    //             checkString(charArray[1], input); 
+    //         }
+    //     }
+    // }
+
+    // top -> bottom
     // line indexes = 1,6,11,16,21
-    if(charArray[6] != ""){        
-        // 2 letter        
-        input = charArray[1].concat(charArray[6]);
-        checkString(charArray[1], input);        
-        input = charArray[6].concat(charArray[1]);
-        checkString(charArray[1], input);       
-        if(charArray[11] != ""){
-            // 3 letter
-            input = charArray[1].concat(charArray[6],charArray[11]);
-            checkString(charArray[1], input);        
-            input = charArray[11].concat(charArray[6],charArray[1]);
-            checkString(charArray[1], input);  
-            if(charArray[16] != ""){
-                // 4 letter
-                input = charArray[1].concat(charArray[6],charArray[11],charArray[16]);
-                checkString(charArray[1], input);        
-                input = charArray[16].concat(charArray[11],charArray[6],charArray[1]);
-                checkString(charArray[1], input); 
-                if(charArray[21] != ""){
-                    // 5 letter
-                    input = charArray[1].concat(charArray[6],charArray[11],charArray[16],charArray[21]);
-                    checkString(charArray[1], input);        
-                    input = charArray[21].concat(charArray[16],charArray[11],charArray[6],charArray[1]);
-                    checkString(charArray[1], input);                     
-                }
-            }
-        }
-    }
+    inputArray = [charArray[1], charArray[6], charArray[11], charArray[16], charArray[21]];
+    createChecks(inputArray);
 
-    // topRight - bottomLeft
+    // topRight -> bottomLeft
     // line indexes = 1,5
-    if(charArray[5] != ""){        
-        // 2 letter
-        input = charArray[1].concat(charArray[5]);
-        checkString(charArray[1], input);        
-        input = charArray[5].concat(charArray[1]);
-        checkString(charArray[1], input);   
-    }
+    inputArray = [charArray[1], charArray[5]];
+    createChecks(inputArray);
 
     // right -> left 
     // line indexes = 1,0
-    let inputArray = [charArray[1], charArray[0]];
+    inputArray = [charArray[1], charArray[0]];
     createChecks(inputArray);
-    // if(charArray[0] != ""){        
-    //     // 2 letter          
-
-    //     // create line = input
-    //     let inputArray = [charArray[1], charArray[0]]
-    //     createChecks(inputArray)
-    // }
 
 }
 const tile_A3Check = () => {
@@ -609,30 +575,85 @@ const createChecks = (lineChars) => {
             if(lineChars[1] != ""){
                 input = lineChars[0].concat(lineChars[1]);
                 checkString(lineChars[0], input);
-
                 input = lineChars[1].concat(lineChars[0]);
                 checkString(lineChars[0], input);
             }
-
             break;
+
         case 3:
             // 3 letter
+            if(lineChars[1] != ""){
+                input = lineChars[0].concat(lineChars[1]);
+                checkString(lineChars[0], input);
+                input = lineChars[1].concat(lineChars[0]);
+                checkString(lineChars[0], input);
+                
+                if(lineChars[2] != ""){
+                    input = lineChars[0].concat(lineChars[1],lineChars[2]);
+                    checkString(lineChars[0], input);
+                    input = lineChars[2].concat(lineChars[1],lineChars[0]);
+                    checkString(lineChars[0], input);                        
+                }
+            }            
+            break;  
 
-            break;        
         case 4:
             // 4 letter
-
+            if(lineChars[1] != ""){
+                input = lineChars[0].concat(lineChars[1]);
+                checkString(lineChars[0], input);
+                input = lineChars[1].concat(lineChars[0]);
+                checkString(lineChars[0], input);
+                
+                if(lineChars[2] != ""){
+                    input = lineChars[0].concat(lineChars[1],lineChars[2]);
+                    checkString(lineChars[0], input);
+                    input = lineChars[2].concat(lineChars[1],lineChars[0]);
+                    checkString(lineChars[0], input);    
+                    
+                    if(lineChars[3] != ""){
+                        input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3]);
+                        checkString(lineChars[0], input);
+                        input = lineChars[3].concat(lineChars[2],lineChars[1],lineChars[0]);
+                        checkString(lineChars[0], input);                        
+                    }
+                }
+            } 
             break;       
         case 5:
             // 5 letter
+            if(lineChars[1] != ""){
+                input = lineChars[0].concat(lineChars[1]);
+                checkString(lineChars[0], input);
+                input = lineChars[1].concat(lineChars[0]);
+                checkString(lineChars[0], input);
+                
+                if(lineChars[2] != ""){
+                    input = lineChars[0].concat(lineChars[1],lineChars[2]);
+                    checkString(lineChars[0], input);
+                    input = lineChars[2].concat(lineChars[1],lineChars[0]);
+                    checkString(lineChars[0], input);    
+                    
+                    if(lineChars[3] != ""){
+                        input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3]);
+                        checkString(lineChars[0], input);
+                        input = lineChars[3].concat(lineChars[2],lineChars[1],lineChars[0]);
+                        checkString(lineChars[0], input); 
 
-
+                        if(lineChars[4] != ""){
+                            input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3],lineChars[4]);
+                            checkString(lineChars[0], input);
+                            input = lineChars[4].concat(lineChars[3],lineChars[2],lineChars[1],lineChars[0]);
+                            checkString(lineChars[0], input);                        
+                        }                      
+                    }
+                }
+            } 
             break;
         default:
             //
+            console.log("issue detected")
     }
-    
-
 }
 
 
