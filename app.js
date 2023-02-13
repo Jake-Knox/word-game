@@ -744,9 +744,22 @@ const tile_B2Check = () => {
     strictCheck(charArray[6], inputArray);
 
     // up down
-    
+    inputArray = [charArray[6], charArray[11],charArray[16],charArray[21]];
+    createChecks(inputArray);
+    inputArray = [charArray[6], charArray[1]];
+    createChecks(inputArray);
+    inputArray = [charArray[1],charArray[6],charArray[11],charArray[16]];
+    strictCheck(charArray[6], inputArray);
+    inputArray = [charArray[1],charArray[6],charArray[11],charArray[16],charArray[21]];
+    strictCheck(charArray[6], inputArray);
 
     // diag /
+    inputArray = [charArray[6], ,charArray[2]];
+    createChecks(inputArray);
+    inputArray = [charArray[6], charArray[10]];
+    createChecks(inputArray);
+    inputArray = [charArray[2],charArray[6],charArray[10]];
+    strictCheck(charArray[6], inputArray);
 }
 const tile_B3Check = () => {
     let inputArray = "";
