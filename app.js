@@ -593,7 +593,7 @@ const logWord = (word) => {
 // ROW A
 
 const tile_A1Check = () => {    
-    let inputArray = "";
+    let inputArray = ""; // start index = 0
     // left <-> right // line indexes = 0,1,2,3,4
     inputArray = [charArray[0], charArray[1], charArray[2], charArray[3], charArray[4]];
     createChecks(inputArray);
@@ -606,7 +606,7 @@ const tile_A1Check = () => {
 }
 
 const tile_A2Check = () => {    
-    let inputArray = "";
+    let inputArray = ""; // start index = 1
     // left right - line indexes = 1,2,3,4
     inputArray = [charArray[1], charArray[2], charArray[3], charArray[4]];
     createChecks(inputArray);
@@ -631,7 +631,7 @@ const tile_A2Check = () => {
     createChecks(inputArray);
 }
 const tile_A3Check = () => {
-    let inputArray = "";
+    let inputArray = ""; // start index = 2
     // left right
     inputArray = [charArray[2], charArray[3], charArray[4]];
     createChecks(inputArray);
@@ -656,7 +656,7 @@ const tile_A3Check = () => {
     createChecks(inputArray);
 }
 const tile_A4Check = () => {
-    let inputArray = "";
+    let inputArray = ""; // start index = 3
     // left right - line indexes = 0,1,2,3
     inputArray = [charArray[3], charArray[2], charArray[1], charArray[0]];
     createChecks(inputArray);
@@ -681,7 +681,7 @@ const tile_A4Check = () => {
     createChecks(inputArray);
 }
 const tile_A5Check = () => {
-    let inputArray = "";
+    let inputArray = ""; // start index = 4
     // left right - line indexes = 4,3,2,1,0
     inputArray = [charArray[4], charArray[3], charArray[2], charArray[1], charArray[0]];
     createChecks(inputArray);
@@ -695,7 +695,7 @@ const tile_A5Check = () => {
 
 // ROW B
 const tile_B1Check = () => {
-    let inputArray = "";
+    let inputArray = ""; // start index = 5
     // left right - 5,6,7,8,9
     inputArray = [charArray[5], charArray[6], charArray[7], charArray[8], charArray[9]];
     createChecks(inputArray);
@@ -723,12 +723,28 @@ const tile_B1Check = () => {
     
 }
 const tile_B2Check = () => {
-    let inputArray = "";
+    let inputArray = ""; // start index = 6
     // left right
-
+    inputArray = [charArray[6], charArray[7],charArray[8],charArray[9]];
+    createChecks(inputArray);
+    inputArray = [charArray[6], charArray[5]];
+    createChecks(inputArray);
+    inputArray = [charArray[5],charArray[6],charArray[7],charArray[8]];
+    strictCheck(charArray[6], inputArray);
+    inputArray = [charArray[5],charArray[6],charArray[7],charArray[8],charArray[9]];
+    strictCheck(charArray[6], inputArray);
     // diag \
+    inputArray = [charArray[6], charArray[12],charArray[18],charArray[24]];
+    createChecks(inputArray);
+    inputArray = [charArray[6], charArray[0]];
+    createChecks(inputArray);
+    inputArray = [charArray[0],charArray[6],charArray[12],charArray[18]];
+    strictCheck(charArray[6], inputArray);
+    inputArray = [charArray[0],charArray[6],charArray[12],charArray[18],charArray[24]];
+    strictCheck(charArray[6], inputArray);
 
     // up down
+    
 
     // diag /
 }
