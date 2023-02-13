@@ -612,7 +612,10 @@ const tile_A2Check = () => {
     createChecks(inputArray);
     // 1,0
     inputArray = [charArray[1], charArray[0]];
-    createChecks(inputArray);
+    createChecks(inputArray);  
+    // 0,1,2
+    inputArray = [charArray[0],charArray[1],charArray[2]];
+    strictCheck(charArray[1], inputArray);
     // 0,1,2,3
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
     strictCheck(charArray[1], inputArray);
@@ -638,6 +641,9 @@ const tile_A3Check = () => {
     inputArray = [charArray[2], charArray[1], charArray[0]];
     createChecks(inputArray);
 
+
+    inputArray = [charArray[1],charArray[2],charArray[3]];
+    strictCheck(charArray[2], inputArray);
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
     strictCheck(charArray[2], inputArray);
     inputArray = [charArray[1],charArray[2],charArray[3],charArray[4]];
@@ -663,6 +669,9 @@ const tile_A4Check = () => {
     // 3,4
     inputArray = [charArray[3], charArray[4]];
     createChecks(inputArray);
+    // 2,3,4
+    inputArray = [charArray[2],charArray[3],charArray[4]];
+    strictCheck(charArray[3], inputArray);
     // 1,2,3,4
     inputArray = [charArray[1],charArray[2],charArray[3],charArray[4]];
     strictCheck(charArray[3], inputArray);
@@ -699,17 +708,18 @@ const tile_B1Check = () => {
     // left right - 5,6,7,8,9
     inputArray = [charArray[5], charArray[6], charArray[7], charArray[8], charArray[9]];
     createChecks(inputArray);
-
     // diag \ 5,11,17,23
     inputArray = [charArray[5], charArray[6], charArray[7], charArray[8], charArray[9]];
     createChecks(inputArray);
-
     // up down - 5,10,15,20
     inputArray = [charArray[5], charArray[10], charArray[15], charArray[20]];
     createChecks(inputArray);
     // 5,0
     inputArray = [charArray[5], charArray[0]];
     createChecks(inputArray);
+    // 0,5,10
+    inputArray = [charArray[0],charArray[5],charArray[10]];
+    strictCheck(charArray[5], inputArray);
     // 0,5,10,15
     inputArray = [charArray[0],charArray[5],charArray[10],charArray[15]];
     strictCheck(charArray[5], inputArray);
@@ -725,19 +735,26 @@ const tile_B1Check = () => {
 const tile_B2Check = () => {
     let inputArray = ""; // start index = 6
     // left right
-    inputArray = [charArray[6], charArray[7],charArray[8],charArray[9]];
-    createChecks(inputArray);
     inputArray = [charArray[6], charArray[5]];
     createChecks(inputArray);
+    inputArray = [charArray[6], charArray[7],charArray[8],charArray[9]];
+    createChecks(inputArray);   
+
+    inputArray = [charArray[5],charArray[6],charArray[7]];
+    strictCheck(charArray[6], inputArray);
     inputArray = [charArray[5],charArray[6],charArray[7],charArray[8]];
     strictCheck(charArray[6], inputArray);
     inputArray = [charArray[5],charArray[6],charArray[7],charArray[8],charArray[9]];
     strictCheck(charArray[6], inputArray);
+
     // diag \
     inputArray = [charArray[6], charArray[12],charArray[18],charArray[24]];
     createChecks(inputArray);
     inputArray = [charArray[6], charArray[0]];
     createChecks(inputArray);
+
+    inputArray = [charArray[0],charArray[6],charArray[12]];
+    strictCheck(charArray[6], inputArray);
     inputArray = [charArray[0],charArray[6],charArray[12],charArray[18]];
     strictCheck(charArray[6], inputArray);
     inputArray = [charArray[0],charArray[6],charArray[12],charArray[18],charArray[24]];
@@ -748,15 +765,18 @@ const tile_B2Check = () => {
     createChecks(inputArray);
     inputArray = [charArray[6], charArray[1]];
     createChecks(inputArray);
+
+    inputArray = [charArray[1],charArray[6],charArray[11]];
+    strictCheck(charArray[6], inputArray);
     inputArray = [charArray[1],charArray[6],charArray[11],charArray[16]];
     strictCheck(charArray[6], inputArray);
     inputArray = [charArray[1],charArray[6],charArray[11],charArray[16],charArray[21]];
     strictCheck(charArray[6], inputArray);
 
     // diag /
-    inputArray = [charArray[6], ,charArray[2]];
+    inputArray = [charArray[6],charArray[2]];
     createChecks(inputArray);
-    inputArray = [charArray[6], charArray[10]];
+    inputArray = [charArray[6],charArray[10]];
     createChecks(inputArray);
     inputArray = [charArray[2],charArray[6],charArray[10]];
     strictCheck(charArray[6], inputArray);
@@ -764,12 +784,57 @@ const tile_B2Check = () => {
 const tile_B3Check = () => {
     let inputArray = "";
     // left right
+    inputArray = [charArray[7],charArray[6],charArray[5]];
+    createChecks(inputArray);
+    inputArray = [charArray[7],charArray[8],charArray[9]];
+    createChecks(inputArray);
+
+    inputArray = [charArray[6],charArray[7],charArray[8]];    
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[5],charArray[6],charArray[7],charArray[8]];
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[6],charArray[7],charArray[8],charArray[9]];
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[5],charArray[6],charArray[7],charArray[8],charArray[9]];
+    strictCheck(charArray[7], inputArray);
 
     // diag \
+    inputArray = [charArray[7],charArray[13],charArray[19]];
+    createChecks(inputArray);
+    inputArray = [charArray[7],charArray[1]];
+    createChecks(inputArray);
+
+    inputArray = [charArray[1],charArray[7],charArray[13]];
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[1],charArray[7],charArray[13],charArray[19]];
+    strictCheck(charArray[7], inputArray);
 
     // up down
+    inputArray = [charArray[7],charArray[2]];
+    createChecks(inputArray);
+    inputArray = [charArray[7],charArray[12],charArray[17],charArray[22]];
+    createChecks(inputArray);
+    
+    inputArray = [charArray[2],charArray[7],charArray[12]];    
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[2],charArray[7],charArray[12],charArray[17]];
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[2],charArray[7],charArray[12],charArray[17],charArray[22]];
+    strictCheck(charArray[7], inputArray);
 
     // diag /
+
+    inputArray = [charArray[7],charArray[3]];
+    createChecks(inputArray);
+    inputArray = [charArray[7],charArray[11],charArray[15]];
+    createChecks(inputArray);
+    
+    inputArray = [charArray[3],charArray[7],charArray[11]];    
+    strictCheck(charArray[7], inputArray);
+    inputArray = [charArray[3],charArray[7],charArray[11],charArray[15]];
+    strictCheck(charArray[7], inputArray);
+
+
 }
 const tile_B4Check = () => {
     let inputArray = "";
