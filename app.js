@@ -118,9 +118,10 @@ for(let i = 0; i < tileArray.length; i++){
         // set clicked tile bg colour
         tileArray[i].style.backgroundColor = "#667f9d";
         tileArray[i].tabIndex = 0;
-        tileArray[i].focus();
+        
         // set this tile to last used
         lastTileUsed = tileArray[i];
+        lastTileUsed.focus();
         // console.log(lastTileUsed)
         } 
     })
