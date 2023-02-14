@@ -1,5 +1,6 @@
 //import { dictIncludesA, dictIncludesB, dictIncludesC, dictIncludesD, dictIncludesE, dictIncludesF, dictIncludesG, dictIncludesH, dictIncludesI, dictIncludesJ, dictIncludesK, dictIncludesL, dictIncludesM, dictIncludesN, dictIncludesO, dictIncludesP, dictIncludesQ, dictIncludesR, dictIncludesS, dictIncludesT, dictIncludesU, dictIncludesV, dictIncludesW, dictIncludesX, dictIncludesY, dictIncludesZ } from "./iDictionary.js";
 
+// imports from dictionary
 import { dictA2Letter, dictA3Letter, dictA4Letter, dictA5Letter }  from "./iDictionary.js";
 import { dictB2Letter, dictB3Letter, dictB4Letter, dictB5Letter }  from "./iDictionary.js";
 import { dictC2Letter, dictC3Letter, dictC4Letter, dictC5Letter }  from "./iDictionary.js";
@@ -256,7 +257,7 @@ const endTurn = () => {
 
             default:
                 // nothing
-                console.log("tile not supported yet")
+                console.log("tile not supported yet or ERROR")
         }
 
         if(playerTurn == 1)
@@ -349,7 +350,6 @@ const checkString = (newChar, inputStr) => {
         break;
 
         case "B": 
-
         switch(inputStr.length){
             case 2:
                 for(const entry of dictB2Letter)
@@ -362,7 +362,8 @@ const checkString = (newChar, inputStr) => {
                 break;
             case 3:
                 for(const entry of dictB3Letter)
-                {                        
+                {
+                    //console.log(entry);                        
                     if(inputLC == entry){
                         logWord(inputStr);
                         console.log(`${inputStr} is a match!`);
@@ -401,274 +402,968 @@ const checkString = (newChar, inputStr) => {
         break;
 
         case "C":           
-            for(const entry of dictIncludesC)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictC2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictC3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictC4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictC5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "D":           
-            for(const entry of dictIncludesD)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+            switch(inputStr.length){
+            case 2:
+                for(const entry of dictD2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictD3Letter)
+                {                      
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictD4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictD5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "E":           
-            for(const entry of dictIncludesE)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictE2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictE3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictE4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictE5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "F":           
-            for(const entry of dictIncludesF)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictF2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictF3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictF4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictF5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "G":           
-            for(const entry of dictIncludesG)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictG2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictG3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictG4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictG5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "H":           
-            for(const entry of dictIncludesH)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictH2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictH3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictH4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictH5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "I":           
-            for(const entry of dictIncludesI)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictI2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictI3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictI4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictI5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "J":           
-            for(const entry of dictIncludesJ)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictJ2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictJ3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictJ4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictJ5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "K":           
-            for(const entry of dictIncludesK)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictK2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictK3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictK4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictK5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "L":           
-            for(const entry of dictIncludesL)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictL2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictL3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictL4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictL5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "M":           
-            for(const entry of dictIncludesM)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictM2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictM3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictM4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictM5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "N":           
-            for(const entry of dictIncludesN)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictN2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictN3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictN4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictN5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "O":            
-            for(const entry of dictIncludesO)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictO2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                    
+                break;
+            case 3:
+                for(const entry of dictO3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictO4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictO5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "P":           
-            for(const entry of dictIncludesP)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictP2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictP3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictP4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictP5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "Q":           
-            for(const entry of dictIncludesQ)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictQ2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictQ3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictQ4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictQ5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "R":           
-            for(const entry of dictIncludesR)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictR2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictR3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictR4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictR5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "S":           
-            for(const entry of dictIncludesS)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictS2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictS3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictS4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictS5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "T":            
-            for(const entry of dictIncludesT)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictT2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictT3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictT4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictT5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "U":           
-            for(const entry of dictIncludesU)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictU2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                    
+                break;
+            case 3:
+                for(const entry of dictU3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictU4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictU5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "V":           
-            for(const entry of dictIncludesV)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictV2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictV3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictV4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictV5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "W":           
-            for(const entry of dictIncludesW)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictW2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictW3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictW4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictW5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "X":           
-            for(const entry of dictIncludesX)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictX2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictX3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictX4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictX5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "Y":           
-            for(const entry of dictIncludesY)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictY2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictY3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictY4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictY5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
         case "Z":           
-            for(const entry of dictIncludesZ)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictZ2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictZ3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictZ4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictZ5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
         break;
-
         default:
         // nothing yet
         console.log(`letter ${newChar} not included in dictionary/search yet`);
-
     }
 }
 
@@ -725,7 +1420,7 @@ const tile_A2Check = () => {
     createChecks(inputArray);  
     // 0,1,2
     inputArray = [charArray[0],charArray[1],charArray[2]];
-    strictCheck(charArray[1], inputArray);
+    strictCheck(inputArray);
     // 0,1,2,3
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
     strictCheck(charArray[1], inputArray);
@@ -1124,7 +1819,7 @@ const createChecks = (lineChars) => {
 }
 
 
-const strictCheck = (newChar, lineChars) => {
+const strictCheck = (lineChars) => {
 
     // console.log(`line length: ${lineChars.length}`)
     //console.log(lineChars)
@@ -1148,16 +1843,16 @@ const strictCheck = (newChar, lineChars) => {
 
             case 2:
                 input = lineChars[0].concat(lineChars[1]);
-                checkString(newChar, input);
+                checkString(lineChars[0], input);
                 input = lineChars[1].concat(lineChars[0]);
-                checkString(newChar, input);
+                checkString(lineChars[1], input);
                 break;
     
             case 3:
                 input = lineChars[0].concat(lineChars[1],lineChars[2]);
-                checkString(newChar, input);
+                checkString(lineChars[0], input);
                 input = lineChars[2].concat(lineChars[1],lineChars[0]);
-                checkString(newChar, input);
+                checkString(lineChars[2], input);
                 break;
     
             case 4:

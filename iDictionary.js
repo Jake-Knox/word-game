@@ -177,7 +177,7 @@ export { dictJ2Letter, dictJ3Letter, dictJ4Letter, dictJ5Letter };
 export { dictK2Letter, dictK3Letter, dictK4Letter, dictK5Letter };
 export { dictL2Letter, dictL3Letter, dictL4Letter, dictL5Letter };
 export { dictM2Letter, dictM3Letter, dictM4Letter, dictM5Letter };
-export { dictM2Letter, dictM3Letter, dictM4Letter, dictM5Letter };
+export { dictN2Letter, dictN3Letter, dictN4Letter, dictN5Letter };
 export { dictO2Letter, dictO3Letter, dictO4Letter, dictO5Letter };
 export { dictP2Letter, dictP3Letter, dictP4Letter, dictP5Letter };
 export { dictQ2Letter, dictQ3Letter, dictQ4Letter, dictQ5Letter };
