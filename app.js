@@ -1423,10 +1423,10 @@ const tile_A2Check = () => {
     strictCheck(inputArray);
     // 0,1,2,3
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
-    strictCheck(charArray[1], inputArray);
+    strictCheck(inputArray);
     // 0,1,2,3,4
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
-    strictCheck(charArray[1], inputArray);
+    strictCheck(inputArray);
 
     // diag \ - line indexes = 1,7,13,19
     inputArray = [charArray[1], charArray[7], charArray[13], charArray[19]];
@@ -1446,15 +1446,14 @@ const tile_A3Check = () => {
     inputArray = [charArray[2], charArray[1], charArray[0]];
     createChecks(inputArray);
 
-
     inputArray = [charArray[1],charArray[2],charArray[3]];
-    strictCheck(charArray[2], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3]];
-    strictCheck(charArray[2], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[1],charArray[2],charArray[3],charArray[4]];
-    strictCheck(charArray[2], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
-    strictCheck(charArray[2], inputArray);
+    strictCheck(inputArray);
 
     // diag \
     inputArray = [charArray[2], charArray[8], charArray[14]];
@@ -1476,13 +1475,13 @@ const tile_A4Check = () => {
     createChecks(inputArray);
     // 2,3,4
     inputArray = [charArray[2],charArray[3],charArray[4]];
-    strictCheck(charArray[3], inputArray);
+    strictCheck(inputArray);
     // 1,2,3,4
     inputArray = [charArray[1],charArray[2],charArray[3],charArray[4]];
-    strictCheck(charArray[3], inputArray);
+    strictCheck(inputArray);
     // 0,1,2,3,4
     inputArray = [charArray[0],charArray[1],charArray[2],charArray[3],charArray[4]];
-    strictCheck(charArray[3], inputArray);
+    strictCheck(inputArray);
 
     // diag \ - line indexes = 3,9
     inputArray = [charArray[3], charArray[9]];
@@ -1524,13 +1523,13 @@ const tile_B1Check = () => {
     createChecks(inputArray);
     // 0,5,10
     inputArray = [charArray[0],charArray[5],charArray[10]];
-    strictCheck(charArray[5], inputArray);
+    strictCheck(inputArray);
     // 0,5,10,15
     inputArray = [charArray[0],charArray[5],charArray[10],charArray[15]];
-    strictCheck(charArray[5], inputArray);
+    strictCheck(inputArray);
     //0,5,10,15,20
     inputArray = [charArray[0],charArray[5],charArray[10],charArray[15],charArray[20]];
-    strictCheck(charArray[5], inputArray);
+    strictCheck(inputArray);
 
     // diag /
     inputArray = [charArray[5], charArray[1]];
@@ -1546,11 +1545,11 @@ const tile_B2Check = () => {
     createChecks(inputArray);   
 
     inputArray = [charArray[5],charArray[6],charArray[7]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[5],charArray[6],charArray[7],charArray[8]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[5],charArray[6],charArray[7],charArray[8],charArray[9]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
 
     // diag \
     inputArray = [charArray[6], charArray[12],charArray[18],charArray[24]];
@@ -1559,11 +1558,11 @@ const tile_B2Check = () => {
     createChecks(inputArray);
 
     inputArray = [charArray[0],charArray[6],charArray[12]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[0],charArray[6],charArray[12],charArray[18]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[0],charArray[6],charArray[12],charArray[18],charArray[24]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
 
     // up down
     inputArray = [charArray[6], charArray[11],charArray[16],charArray[21]];
@@ -1572,11 +1571,11 @@ const tile_B2Check = () => {
     createChecks(inputArray);
 
     inputArray = [charArray[1],charArray[6],charArray[11]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[1],charArray[6],charArray[11],charArray[16]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[1],charArray[6],charArray[11],charArray[16],charArray[21]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
 
     // diag /
     inputArray = [charArray[6],charArray[2]];
@@ -1584,7 +1583,7 @@ const tile_B2Check = () => {
     inputArray = [charArray[6],charArray[10]];
     createChecks(inputArray);
     inputArray = [charArray[2],charArray[6],charArray[10]];
-    strictCheck(charArray[6], inputArray);
+    strictCheck(inputArray);
 }
 const tile_B3Check = () => {
     let inputArray = "";
@@ -1595,13 +1594,13 @@ const tile_B3Check = () => {
     createChecks(inputArray);
 
     inputArray = [charArray[6],charArray[7],charArray[8]];    
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[5],charArray[6],charArray[7],charArray[8]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[6],charArray[7],charArray[8],charArray[9]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[5],charArray[6],charArray[7],charArray[8],charArray[9]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
 
     // diag \
     inputArray = [charArray[7],charArray[13],charArray[19]];
@@ -1610,9 +1609,9 @@ const tile_B3Check = () => {
     createChecks(inputArray);
 
     inputArray = [charArray[1],charArray[7],charArray[13]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[1],charArray[7],charArray[13],charArray[19]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
 
     // up down
     inputArray = [charArray[7],charArray[2]];
@@ -1621,11 +1620,11 @@ const tile_B3Check = () => {
     createChecks(inputArray);
     
     inputArray = [charArray[2],charArray[7],charArray[12]];    
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[2],charArray[7],charArray[12],charArray[17]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[2],charArray[7],charArray[12],charArray[17],charArray[22]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
 
     // diag /
 
@@ -1635,42 +1634,65 @@ const tile_B3Check = () => {
     createChecks(inputArray);
     
     inputArray = [charArray[3],charArray[7],charArray[11]];    
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
     inputArray = [charArray[3],charArray[7],charArray[11],charArray[15]];
-    strictCheck(charArray[7], inputArray);
+    strictCheck(inputArray);
 
 
 }
+
+// trying to reduce code by not using inputArray
 const tile_B4Check = () => {
     let inputArray = "";
     // left right
-    // 8,9 - 8,7,6,5 - 9,8,7 - 9,8,7,6 - 9,8,7,6,5
-
+    // 8,9 - 8,7,6,5 --- 9,8,7 - 9,8,7,6 - 9,8,7,6,5
+    createChecks([charArray[8],charArray[9]]);
+    createChecks([charArray[8],charArray[7],charArray[6],charArray[5]]);     
+    strictCheck([charArray[9],charArray[8],charArray[7]]);
+    strictCheck([charArray[9],charArray[8],charArray[7],charArray[6]]);
+    strictCheck([charArray[9],charArray[8],charArray[7],charArray[6],charArray[5]]);
     // diag \
-    // 8,2 - 8,14 - 2,8,14
-
+    // 8,2 - 8,14 --- 2,8,14
+    createChecks([charArray[8],charArray[2]]);
+    createChecks([charArray[8],charArray[14]]);     
+    strictCheck([charArray[2],charArray[8],charArray[14]]);
     // up down
-    // 8,3 - 8,13,18,23 - 3,8,13 - 3,8,13,18 - 3,8,13,18,23
-
+    // 8,3 - 8,13,18,23 --- 3,8,13 - 3,8,13,18 - 3,8,13,18,23
+    createChecks([charArray[8],charArray[3]]);
+    createChecks([charArray[8],charArray[13],charArray[18],charArray[23]]);     
+    strictCheck([charArray[3],charArray[8],charArray[13]]);
+    strictCheck([charArray[3],charArray[8],charArray[13],charArray[18]]);
+    strictCheck([charArray[3],charArray[8],charArray[13],charArray[18],charArray[23]]);
     // diag /
-    // 8,4 - 8.12,16,20 - 4,8,12 - 4,8,12,16 - 4,8,12,16,20
+    // 8,4 - 8,12,16,20 --- 4,8,12 - 4,8,12,16 - 4,8,12,16,20
+    createChecks([charArray[8],charArray[4]]);
+    createChecks([charArray[8],charArray[12],charArray[16],charArray[20]]);     
+    strictCheck([charArray[4],charArray[8],charArray[12]]);
+    strictCheck([charArray[4],charArray[8],charArray[12],charArray[16]]);
+    strictCheck([charArray[4],charArray[8],charArray[12],charArray[16],charArray[20]]);
 
 }
 const tile_B5Check = () => {
     let inputArray = "";
     // left right
     // 9,8,7,6,5
+    createChecks([charArray[9],charArray[8],charArray[7],charArray[6],charArray[5]]);
 
     // diag \
     // 9,3
+    createChecks([charArray[9],charArray[3]]);
 
     // up down
-    // 9,4 - 9,14,19,24 - 4,9,14 - 4,9,14,19 - 4,9,14,19,24
+    // 9,4 - 9,14,19,24 --- 4,9,14 - 4,9,14,19 - 4,9,14,19,24
+    createChecks([charArray[9],charArray[8],charArray[7],charArray[6],charArray[5]]);
+    createChecks([charArray[9],charArray[8],charArray[7],charArray[6],charArray[5]]);
+    strictCheck([charArray[4],charArray[9],charArray[14]]);
+    strictCheck([charArray[4],charArray[9],charArray[14],charArray[19]]);
+    strictCheck([charArray[4],charArray[9],charArray[14],charArray[19],charArray[24]]);
 
     // diag /
     // 9,13,17,21
-
-    
+    createChecks([charArray[9],charArray[13],charArray[17],charArray[21]]);
 }
 
 // ROW C
@@ -1738,7 +1760,7 @@ const createChecks = (lineChars) => {
                 input = lineChars[0].concat(lineChars[1]);
                 checkString(lineChars[0], input);
                 input = lineChars[1].concat(lineChars[0]);
-                checkString(lineChars[0], input);
+                checkString(lineChars[1], input);
             }
             break;
 
@@ -1748,13 +1770,13 @@ const createChecks = (lineChars) => {
                 input = lineChars[0].concat(lineChars[1]);
                 checkString(lineChars[0], input);
                 input = lineChars[1].concat(lineChars[0]);
-                checkString(lineChars[0], input);
+                checkString(lineChars[1], input);
                 
                 if(lineChars[2] != ""){
                     input = lineChars[0].concat(lineChars[1],lineChars[2]);
                     checkString(lineChars[0], input);
                     input = lineChars[2].concat(lineChars[1],lineChars[0]);
-                    checkString(lineChars[0], input);                        
+                    checkString(lineChars[2], input);                        
                 }
             }            
             break;  
@@ -1765,19 +1787,19 @@ const createChecks = (lineChars) => {
                 input = lineChars[0].concat(lineChars[1]);
                 checkString(lineChars[0], input);
                 input = lineChars[1].concat(lineChars[0]);
-                checkString(lineChars[0], input);
+                checkString(lineChars[1], input);
                 
                 if(lineChars[2] != ""){
                     input = lineChars[0].concat(lineChars[1],lineChars[2]);
                     checkString(lineChars[0], input);
                     input = lineChars[2].concat(lineChars[1],lineChars[0]);
-                    checkString(lineChars[0], input);    
+                    checkString(lineChars[2], input);    
                     
                     if(lineChars[3] != ""){
                         input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3]);
                         checkString(lineChars[0], input);
                         input = lineChars[3].concat(lineChars[2],lineChars[1],lineChars[0]);
-                        checkString(lineChars[0], input);                        
+                        checkString(lineChars[3], input);                        
                     }
                 }
             } 
@@ -1788,25 +1810,25 @@ const createChecks = (lineChars) => {
                 input = lineChars[0].concat(lineChars[1]);
                 checkString(lineChars[0], input);
                 input = lineChars[1].concat(lineChars[0]);
-                checkString(lineChars[0], input);
+                checkString(lineChars[1], input);
                 
                 if(lineChars[2] != ""){
                     input = lineChars[0].concat(lineChars[1],lineChars[2]);
                     checkString(lineChars[0], input);
                     input = lineChars[2].concat(lineChars[1],lineChars[0]);
-                    checkString(lineChars[0], input);    
+                    checkString(lineChars[2], input);    
                     
                     if(lineChars[3] != ""){
                         input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3]);
                         checkString(lineChars[0], input);
                         input = lineChars[3].concat(lineChars[2],lineChars[1],lineChars[0]);
-                        checkString(lineChars[0], input); 
+                        checkString(lineChars[3], input); 
 
                         if(lineChars[4] != ""){
                             input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3],lineChars[4]);
                             checkString(lineChars[0], input);
                             input = lineChars[4].concat(lineChars[3],lineChars[2],lineChars[1],lineChars[0]);
-                            checkString(lineChars[0], input);                        
+                            checkString(lineChars[4], input);                        
                         }                      
                     }
                 }
@@ -1815,6 +1837,8 @@ const createChecks = (lineChars) => {
         default:
             //
             console.log("issue detected")
+            console.log(lineChars)
+            console.log(lineChars.length)
     }
 }
 
@@ -1857,16 +1881,16 @@ const strictCheck = (lineChars) => {
     
             case 4:
                 input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3]);
-                checkString(newChar, input);
+                checkString(lineChars[0], input);
                 input = lineChars[3].concat(lineChars[2],lineChars[1],lineChars[0]);
-                checkString(newChar, input);
+                checkString(lineChars[3], input);
                 break;
             
             case 5:
                 input = lineChars[0].concat(lineChars[1],lineChars[2],lineChars[3],lineChars[4]);
-                checkString(newChar, input);
+                checkString(lineChars[0], input);
                 input = lineChars[4].concat(lineChars[3],lineChars[2],lineChars[1],lineChars[0]);
-                checkString(newChar, input);
+                checkString(lineChars[4], input);
                 break;
                                                         
             default:

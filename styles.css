@@ -154,6 +154,7 @@ p{
     width: 100%;
     height: 30vh;
     background-color: #b2b7bb;
+    overflow: scroll;
 }
 
 #footer{
