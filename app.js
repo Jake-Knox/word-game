@@ -1,4 +1,12 @@
 import { dictIncludesA, dictIncludesB, dictIncludesC, dictIncludesD, dictIncludesE, dictIncludesF, dictIncludesG, dictIncludesH, dictIncludesI, dictIncludesJ, dictIncludesK, dictIncludesL, dictIncludesM, dictIncludesN, dictIncludesO, dictIncludesP, dictIncludesQ, dictIncludesR, dictIncludesS, dictIncludesT, dictIncludesU, dictIncludesV, dictIncludesW, dictIncludesX, dictIncludesY, dictIncludesZ } from "./iDictionary.js";
+
+import { dictA2Letter, dictA3Letter, dictA4Letter, dictA5Letter }  from "./iDictionary.js";
+import { dictB2Letter, dictB3Letter, dictB4Letter, dictB5Letter }  from "./iDictionary.js";
+
+
+
+
+
 //console.log(dictIncludesA);
 
 // console.log("game start");
@@ -260,26 +268,70 @@ const endTurn = () => {
 
 const checkString = (newChar, inputStr) => {
 
+    let inputLC = inputStr.toLowerCase();
+
     //console.log(`input: ${newChar} - entering switch`);
+
+    //console.log(inputStr.length);
 
     // code has been collapsed - use arrow to see
     switch(newChar)
     {
         case "A":
-            //console.log(`checking for A`)
-            for(const entry of dictIncludesA)
-            {
-                //console.log(`Checking ${inputStr} against ${entry}`)
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
-                }
-                else{
-                    //console.log(`no match`)
-                }
+            switch(inputStr.length){
+                case 2:
+                    //console.log("case 2")
+                    for(const entry of dictA2Letter)
+                    {                        
+                        //console.log(`Checking ${inputLC} against ${entry}`)
+                        //console.log(entry)
+                        if(inputLC == entry){
+                            logWord(inputStr);
+                            console.log(`${inputStr} is a match!`);
+                        }
+                    }
+                    break;
+                case 3:
+                    //console.log("case 3")
+                    for(const entry of dictA3Letter)
+                    {                        
+                        //console.log(`Checking ${inputLC} against ${entry}`)
+                        //console.log(entry)
+                        if(inputLC == entry){
+                            logWord(inputStr);
+                            console.log(`${inputStr} is a match!`);
+                        }
+                    }
+                    break;
+                case 4:
+                    //console.log("case 4")
+                    for(const entry of dictA4Letter)
+                    {                        
+                        //console.log(`Checking ${inputLC} against ${entry}`)
+                        //console.log(entry)
+                        if(inputLC == entry){
+                            logWord(inputStr);
+                            console.log(`${inputStr} is a match!`);
+                        }
+                    }
+                    break;
+                case 5:
+                    //console.log("case 5")
+                    for(const entry of dictA5Letter)
+                    {                        
+                        //console.log(`Checking ${inputLC} against ${entry}`)
+                        //console.log(entry)
+                        if(inputLC == entry){
+                            logWord(inputStr);
+                            console.log(`${inputStr} is a match!`);
+                        }
+                    }
+                    break;
             }
         break;
-        case "B":           
+
+        case "B": 
+
             for(const entry of dictIncludesB)
             {                
                 if(inputStr == entry){
@@ -289,7 +341,9 @@ const checkString = (newChar, inputStr) => {
                 else{                   
                 }
             }
+
         break;
+
         case "C":           
             for(const entry of dictIncludesC)
             {                
