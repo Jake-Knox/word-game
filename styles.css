@@ -103,6 +103,8 @@ h1{
 
 .box_5x5:focus {
     /* outline: none; */
+    text-align: center;
+
 }
 
 .locked{
