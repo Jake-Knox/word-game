@@ -92,7 +92,7 @@ resetMove();
 
 // setting up button click on each tile
 for(let i = 0; i < tileArray.length; i++){   
-    tileArray[i].tabIndex = 1;
+    //tileArray[i].tabIndex = 0;
 
     // add on-click to each
     tileArray[i].addEventListener("click", () => {
@@ -108,7 +108,7 @@ for(let i = 0; i < tileArray.length; i++){
                 if(tileArray[j].classList.contains("locked") == false){
                     // reset bg colour of other tiles
                     tileArray[j].style.backgroundColor = "#b2b7bb";
-                    tileArray[j].tabIndex = 1;                
+                    //tileArray[j].tabIndex = 1;                
                     if(lastTileUsed != null){
                         lastTileUsed.innerHTML = (`<p></p>`);                    
                     }
@@ -120,9 +120,12 @@ for(let i = 0; i < tileArray.length; i++){
         tileArray[i].tabIndex = 0;
         
         // set this tile to last used
-        lastTileUsed = tileArray[i];    
+        lastTileUsed = tileArray[i]; 
+
         lastTileUsed.focus();    
-        // console.log(lastTileUsed)
+        //console.log(lastTileUsed)
+        console.log(document.activeElement);
+
         } 
     })
 
@@ -141,6 +144,7 @@ for(let i = 0; i < tileArray.length; i++){
                 tileArray[i].innerHTML = (`<p>${(logKey.key).toLocaleUpperCase()}</p>`);
                 tileArray[i].style.backgroundColor = "#667f9d";
                 lastTileUsed = tileArray[i];
+                lastTileUsed.focus();    
                 moveMade = true;      
                 
                 charArray[i] = logKey.key.toLocaleUpperCase();
@@ -150,7 +154,7 @@ for(let i = 0; i < tileArray.length; i++){
                 if(lastTileUsed != null){
                     // reset colour to normal
                     lastTileUsed.style.backgroundColor = "#b2b7bb";
-                    lastTileUsed.tabIndex = 1;
+                    lastTileUsed.tabIndex = 1;                    
                     resetMove();          
                 } 
             } 
