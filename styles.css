@@ -166,10 +166,9 @@ p{
     font-size: 1em;
 }
 
-
 #output{
-    height: 100vh;
-    max-width: 700px;
+    /* height: 100vh; */
+    /* max-width: 700px; */
     font-size: small;
     word-wrap:break-word;
 }
