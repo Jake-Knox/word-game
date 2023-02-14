@@ -1,11 +1,31 @@
-import { dictIncludesA, dictIncludesB, dictIncludesC, dictIncludesD, dictIncludesE, dictIncludesF, dictIncludesG, dictIncludesH, dictIncludesI, dictIncludesJ, dictIncludesK, dictIncludesL, dictIncludesM, dictIncludesN, dictIncludesO, dictIncludesP, dictIncludesQ, dictIncludesR, dictIncludesS, dictIncludesT, dictIncludesU, dictIncludesV, dictIncludesW, dictIncludesX, dictIncludesY, dictIncludesZ } from "./iDictionary.js";
+//import { dictIncludesA, dictIncludesB, dictIncludesC, dictIncludesD, dictIncludesE, dictIncludesF, dictIncludesG, dictIncludesH, dictIncludesI, dictIncludesJ, dictIncludesK, dictIncludesL, dictIncludesM, dictIncludesN, dictIncludesO, dictIncludesP, dictIncludesQ, dictIncludesR, dictIncludesS, dictIncludesT, dictIncludesU, dictIncludesV, dictIncludesW, dictIncludesX, dictIncludesY, dictIncludesZ } from "./iDictionary.js";
 
 import { dictA2Letter, dictA3Letter, dictA4Letter, dictA5Letter }  from "./iDictionary.js";
 import { dictB2Letter, dictB3Letter, dictB4Letter, dictB5Letter }  from "./iDictionary.js";
-
-
-
-
+import { dictC2Letter, dictC3Letter, dictC4Letter, dictC5Letter }  from "./iDictionary.js";
+import { dictD2Letter, dictD3Letter, dictD4Letter, dictD5Letter }  from "./iDictionary.js";
+import { dictE2Letter, dictE3Letter, dictE4Letter, dictE5Letter }  from "./iDictionary.js";
+import { dictF2Letter, dictF3Letter, dictF4Letter, dictF5Letter }  from "./iDictionary.js";
+import { dictG2Letter, dictG3Letter, dictG4Letter, dictG5Letter }  from "./iDictionary.js";
+import { dictH2Letter, dictH3Letter, dictH4Letter, dictH5Letter }  from "./iDictionary.js";
+import { dictI2Letter, dictI3Letter, dictI4Letter, dictI5Letter }  from "./iDictionary.js";
+import { dictJ2Letter, dictJ3Letter, dictJ4Letter, dictJ5Letter }  from "./iDictionary.js";
+import { dictK2Letter, dictK3Letter, dictK4Letter, dictK5Letter }  from "./iDictionary.js";
+import { dictL2Letter, dictL3Letter, dictL4Letter, dictL5Letter }  from "./iDictionary.js";
+import { dictM2Letter, dictM3Letter, dictM4Letter, dictM5Letter }  from "./iDictionary.js";
+import { dictN2Letter, dictN3Letter, dictN4Letter, dictN5Letter }  from "./iDictionary.js";
+import { dictO2Letter, dictO3Letter, dictO4Letter, dictO5Letter }  from "./iDictionary.js";
+import { dictP2Letter, dictP3Letter, dictP4Letter, dictP5Letter }  from "./iDictionary.js";
+import { dictQ2Letter, dictQ3Letter, dictQ4Letter, dictQ5Letter }  from "./iDictionary.js";
+import { dictR2Letter, dictR3Letter, dictR4Letter, dictR5Letter }  from "./iDictionary.js";
+import { dictS2Letter, dictS3Letter, dictS4Letter, dictS5Letter }  from "./iDictionary.js";
+import { dictT2Letter, dictT3Letter, dictT4Letter, dictT5Letter }  from "./iDictionary.js";
+import { dictU2Letter, dictU3Letter, dictU4Letter, dictU5Letter }  from "./iDictionary.js";
+import { dictV2Letter, dictV3Letter, dictV4Letter, dictV5Letter }  from "./iDictionary.js";
+import { dictW2Letter, dictW3Letter, dictW4Letter, dictW5Letter }  from "./iDictionary.js";
+import { dictX2Letter, dictX3Letter, dictX4Letter, dictX5Letter }  from "./iDictionary.js";
+import { dictY2Letter, dictY3Letter, dictY4Letter, dictY5Letter }  from "./iDictionary.js";
+import { dictZ2Letter, dictZ3Letter, dictZ4Letter, dictZ5Letter }  from "./iDictionary.js";
 
 //console.log(dictIncludesA);
 
@@ -44,8 +64,6 @@ tileArray.push(tile_A1, tile_A2, tile_A3, tile_A4, tile_A5, tile_B1, tile_B2, ti
 
 let charArray = ["","","","","","","","","","","","","","","","","","","","","","","","",""]
 //console.log(charArray.length)
-
-
 
 // other elements
 const player1Text = document.getElementById("player_1_text");
