@@ -332,15 +332,53 @@ const checkString = (newChar, inputStr) => {
 
         case "B": 
 
-            for(const entry of dictIncludesB)
-            {                
-                if(inputStr == entry){
-                    logWord(inputStr);
-                    console.log(`${inputStr} is a match!`);
+        switch(inputStr.length){
+            case 2:
+                for(const entry of dictB2Letter)
+                {                       
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-                else{                   
+                break;
+            case 3:
+                for(const entry of dictB3Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
                 }
-            }
+                break;
+            case 4:
+                for(const entry of dictB4Letter)
+                {                        
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+            case 5:
+                for(const entry of dictB5Letter)
+                {                    
+                    if(inputLC == entry){
+                        logWord(inputStr);
+                        console.log(`${inputStr} is a match!`);
+                    }
+                }
+                break;
+        }
+            // for(const entry of dictIncludesB)
+            // {                
+            //     if(inputStr == entry){
+            //         logWord(inputStr);
+            //         console.log(`${inputStr} is a match!`);
+            //     }
+            //     else{                   
+            //     }
+            // }
 
         break;
 

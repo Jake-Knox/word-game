@@ -163,3 +163,11 @@ p{
 .footer_text{
     font-size: 1em;
 }
+
+
+#output{
+    height: 100vh;
+    max-width: 600px;
+    font-size: small;
+    word-wrap:break-word;
+}
