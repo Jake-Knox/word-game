@@ -120,8 +120,8 @@ for(let i = 0; i < tileArray.length; i++){
         tileArray[i].tabIndex = 0;
         
         // set this tile to last used
-        lastTileUsed = tileArray[i];
-        lastTileUsed.focus();
+        lastTileUsed = tileArray[i];    
+        lastTileUsed.focus();    
         // console.log(lastTileUsed)
         } 
     })
