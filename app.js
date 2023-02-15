@@ -227,9 +227,91 @@ for (let i = 0; i< keyboardKeys.length; i++){
             lastTileUsed.focus();  
             moveMade = true;   
             
-            
+            //console.log(tileArray)
 
-            charArray[i] = keyVal.toLocaleUpperCase();
+            switch(lastTileUsed.id)
+            {
+                case "A1":
+                    charArray[0] = keyVal.toLocaleUpperCase();
+                    break;
+                case "A2":
+                    charArray[1] = keyVal.toLocaleUpperCase();
+                    break;
+                case "A3":
+                    charArray[2] = keyVal.toLocaleUpperCase();
+                    break;
+                case "A4":
+                    charArray[3] = keyVal.toLocaleUpperCase();
+                    break;
+                case "A5":
+                    charArray[4] = keyVal.toLocaleUpperCase();
+                    break;
+                case "B1":
+                    charArray[5] = keyVal.toLocaleUpperCase();
+                    break;
+                case "B2":
+                    charArray[6] = keyVal.toLocaleUpperCase();
+                    break;
+                case "B3":
+                    charArray[7] = keyVal.toLocaleUpperCase();
+                    break;
+                case "B4":
+                    charArray[8] = keyVal.toLocaleUpperCase();
+                    break;
+                case "B5":
+                    charArray[9] = keyVal.toLocaleUpperCase();
+                    break;
+                case "C1":
+                    charArray[10] = keyVal.toLocaleUpperCase();
+                    break;
+                case "C2":
+                    charArray[11] = keyVal.toLocaleUpperCase();
+                    break;
+                case "C3":
+                    charArray[12] = keyVal.toLocaleUpperCase();
+                    break;
+                case "C4":
+                    charArray[13] = keyVal.toLocaleUpperCase();
+                    break;
+                case "C5":
+                    charArray[14] = keyVal.toLocaleUpperCase();
+                    break;
+                case "D1":
+                    charArray[15] = keyVal.toLocaleUpperCase();
+                    break;
+                case "D2":
+                    charArray[16] = keyVal.toLocaleUpperCase();
+                    break;
+                case "D3":
+                    charArray[17] = keyVal.toLocaleUpperCase();
+                    break;
+                case "D4":
+                    charArray[18] = keyVal.toLocaleUpperCase();
+                    break;
+                case "D5":
+                    charArray[19] = keyVal.toLocaleUpperCase();
+                    break;
+                case "E1":
+                    charArray[20] = keyVal.toLocaleUpperCase();
+                    break;
+                case "E2":
+                    charArray[21] = keyVal.toLocaleUpperCase();
+                    break;
+                case "E3":
+                    charArray[22] = keyVal.toLocaleUpperCase();
+                    break;
+                case "E4":
+                    charArray[23] = keyVal.toLocaleUpperCase();
+                    break;
+                case "E5":
+                    charArray[24] = keyVal.toLocaleUpperCase();
+                    break;
+
+                default: console.log("ERROR in ")
+
+            }
+
+            //charArray[i] = keyVal.toLocaleUpperCase();
             console.log(charArray);
             // tileArray[i].innerHTML = (`<p>${(logKey.key).toLocaleUpperCase()}</p>`);
             // tileArray[i].style.backgroundColor = "#667f9d";
@@ -1777,8 +1859,8 @@ const tile_B5Check = () => {
 
     // up down
     // 9,4 - 9,14,19,24 --- 4,9,14 - 4,9,14,19 - 4,9,14,19,24
-    createChecks([charArray[9],charArray[8],charArray[7],charArray[6],charArray[5]]);
-    createChecks([charArray[9],charArray[8],charArray[7],charArray[6],charArray[5]]);
+    createChecks([charArray[9],charArray[4]]);
+    createChecks([charArray[9],charArray[14],charArray[19],charArray[24]]);
     strictCheck([charArray[4],charArray[9],charArray[14]]);
     strictCheck([charArray[4],charArray[9],charArray[14],charArray[19]]);
     strictCheck([charArray[4],charArray[9],charArray[14],charArray[19],charArray[24]]);
