@@ -98,12 +98,13 @@ const keyboardB = document.getElementById("keyB");
 const keyboardN = document.getElementById("keyN");
 const keyboardM = document.getElementById("keyM");
 
+const keyboardKeys = [keyboardA,keyboardB,keyboardC,keyboardD,keyboardE,keyboardF,keyboardG, keyboardH, keyboardI, keyboardJ,keyboardK, keyboardL, keyboardM, keyboardN, keyboardO, keyboardP, keyboardQ, keyboardR, keyboardS, keyboardT, keyboardU, keyboardV, keyboardW, keyboardX, keyboardY, keyboardZ];
+//console.log(keyboardKeys)
+
 const keyboardBackspace = document.getElementById("keyboard_backspace")
 const keyboardEnter = document.getElementById("keyboard_enter")
 
-
 const gameLog = document.getElementById("game_log");
-
 
 // game setup
 let playerTurn = 1; // player1/ player2
@@ -114,7 +115,7 @@ let moveMade = true;
 let lastTileUsed = null;
 
 
-
+// start of functions
 
 const resetMove = () => {
     moveMade = false;
@@ -124,10 +125,11 @@ resetMove();
 
 // setting up button click on each tile
 for(let i = 0; i < tileArray.length; i++){   
-    //tileArray[i].tabIndex = 0;
+    // tileArray[i].tabIndex = 0;
 
     // add on-click to each
     tileArray[i].addEventListener("click", () => {
+        //console.log(`char = "${charArray[i]}"`);
 
         //testing here
         if(tileArray[i].classList.contains("locked")){
@@ -140,8 +142,11 @@ for(let i = 0; i < tileArray.length; i++){
                 if(tileArray[j].classList.contains("locked") == false){
                     // reset bg colour of other tiles
                     tileArray[j].style.backgroundColor = "#b2b7bb";
+                    charArray[j] = "";   
+                    
                     //tileArray[j].tabIndex = 1;                
-                    if(lastTileUsed != null){
+                    if(lastTileUsed != null){    
+                                   
                         lastTileUsed.innerHTML = (`<p></p>`);                    
                     }
                     resetMove();
@@ -177,14 +182,18 @@ for(let i = 0; i < tileArray.length; i++){
                 tileArray[i].style.backgroundColor = "#667f9d";
                 lastTileUsed = tileArray[i];
                 lastTileUsed.focus();    
-                moveMade = true;      
+                moveMade = true;    
                 
                 charArray[i] = logKey.key.toLocaleUpperCase();
             }   
             else if(logKey.keyCode == 8){
-                tileArray[i].innerHTML = (`<p></p>`);
+                //tileArray[i].innerHTML = (`<p></p>`);
                 if(lastTileUsed != null){
                     // reset colour to normal
+                    tileArray[i].innerHTML = (`<p></p>`);
+                    charArray[i] = "";
+
+
                     lastTileUsed.style.backgroundColor = "#b2b7bb";
                     lastTileUsed.tabIndex = 1;                    
                     resetMove();          
@@ -204,6 +213,52 @@ window.addEventListener("keypress", (logKey) => {
         }           
     }
 })
+
+
+// set up keyboard
+for (let i = 0; i< keyboardKeys.length; i++){
+    keyboardKeys[i].addEventListener("click", () => {
+        let keyVal = keyboardKeys[i].innerText;
+
+        if(lastTileUsed != null){
+            console.log(`key press ${keyVal}`);            
+            lastTileUsed.innerHTML = (`<p>${(keyVal).toLocaleUpperCase()}</p>`);
+            lastTileUsed.style.backgroundColor = "#667f9d";
+            lastTileUsed.focus();  
+            moveMade = true;   
+            
+            
+
+            charArray[i] = keyVal.toLocaleUpperCase();
+            console.log(charArray);
+            // tileArray[i].innerHTML = (`<p>${(logKey.key).toLocaleUpperCase()}</p>`);
+            // tileArray[i].style.backgroundColor = "#667f9d";
+            // lastTileUsed = tileArray[i];
+            // lastTileUsed.focus();    
+            // moveMade = true;    
+            
+            // charArray[i] = logKey.key.toLocaleUpperCase();
+
+        }
+    })
+}
+
+keyboardEnter.addEventListener("click", () => {
+    // code same as enter key press
+    if(moveMade == true){
+        endTurn();
+    }
+})
+keyboardBackspace.addEventListener("click", () => {
+    // code same as backspace key press
+    if(lastTileUsed != null){
+        lastTileUsed.innerHTML = (`<p></p>`)
+        lastTileUsed.style.backgroundColor = "#b2b7bb";
+        lastTileUsed.tabIndex = 1;                    
+        resetMove();          
+    } 
+})
+
 
 
 const endTurn = () => {
