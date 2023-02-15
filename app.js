@@ -481,7 +481,7 @@ const checkString = (newChar, inputStr) => {
                         //console.log(entry)
                         if(inputLC == entry){
                             logWord(inputStr);
-                            console.log(`${inputStr} is a match!`);
+                            // console.log(`${inputStr} is a match!`);
                         }
                     }
                     break;
@@ -493,7 +493,7 @@ const checkString = (newChar, inputStr) => {
                         //console.log(entry)
                         if(inputLC == entry){
                             logWord(inputStr);
-                            console.log(`${inputStr} is a match!`);
+                            // console.log(`${inputStr} is a match!`);
                         }
                     }
                     break;
@@ -505,7 +505,7 @@ const checkString = (newChar, inputStr) => {
                         //console.log(entry)
                         if(inputLC == entry){
                             logWord(inputStr);
-                            console.log(`${inputStr} is a match!`);
+                            // console.log(`${inputStr} is a match!`);
                         }
                     }
                     break;
@@ -517,7 +517,7 @@ const checkString = (newChar, inputStr) => {
                         //console.log(entry)
                         if(inputLC == entry){
                             logWord(inputStr);
-                            console.log(`${inputStr} is a match!`);
+                            // console.log(`${inputStr} is a match!`);
                         }
                     }
                     break;
@@ -531,7 +531,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -541,7 +541,7 @@ const checkString = (newChar, inputStr) => {
                     //console.log(entry);                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -550,7 +550,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -559,7 +559,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -583,7 +583,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -592,7 +592,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -601,7 +601,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -610,7 +610,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -623,7 +623,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -632,7 +632,7 @@ const checkString = (newChar, inputStr) => {
                 {                      
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -641,7 +641,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -650,7 +650,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -663,7 +663,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -672,7 +672,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -681,7 +681,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -690,7 +690,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -703,7 +703,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -712,7 +712,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -721,7 +721,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -730,7 +730,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -743,7 +743,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -752,7 +752,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -761,7 +761,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -770,7 +770,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -783,7 +783,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -792,7 +792,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -801,7 +801,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -810,7 +810,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -823,7 +823,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -832,7 +832,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -841,7 +841,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -850,7 +850,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -863,7 +863,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -872,7 +872,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -881,7 +881,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -890,7 +890,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -903,7 +903,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -912,7 +912,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -921,7 +921,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -930,7 +930,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -943,7 +943,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -952,7 +952,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -961,7 +961,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -970,7 +970,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -983,7 +983,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -992,7 +992,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1001,7 +1001,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1010,7 +1010,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1023,7 +1023,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1032,7 +1032,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1041,7 +1041,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1050,7 +1050,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1063,7 +1063,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1072,7 +1072,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1081,7 +1081,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1090,7 +1090,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1103,7 +1103,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1112,7 +1112,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1121,7 +1121,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1130,7 +1130,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1143,7 +1143,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1152,7 +1152,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1161,7 +1161,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1170,7 +1170,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1183,7 +1183,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1192,7 +1192,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1201,7 +1201,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1210,7 +1210,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1223,7 +1223,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1232,7 +1232,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1241,7 +1241,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1250,7 +1250,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1263,7 +1263,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1272,7 +1272,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1281,7 +1281,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1290,7 +1290,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1303,7 +1303,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1312,7 +1312,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1321,7 +1321,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1330,7 +1330,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1343,7 +1343,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1352,7 +1352,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1361,7 +1361,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1370,7 +1370,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1383,7 +1383,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1392,7 +1392,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1401,7 +1401,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1410,7 +1410,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1423,7 +1423,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1432,7 +1432,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1441,7 +1441,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1450,7 +1450,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1463,7 +1463,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1472,7 +1472,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1481,7 +1481,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1490,7 +1490,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1503,7 +1503,7 @@ const checkString = (newChar, inputStr) => {
                 {                       
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1512,7 +1512,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1521,7 +1521,7 @@ const checkString = (newChar, inputStr) => {
                 {                        
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
@@ -1530,7 +1530,7 @@ const checkString = (newChar, inputStr) => {
                 {                    
                     if(inputLC == entry){
                         logWord(inputStr);
-                        console.log(`${inputStr} is a match!`);
+                        // console.log(`${inputStr} is a match!`);
                     }
                 }
                 break;
