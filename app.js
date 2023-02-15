@@ -2040,10 +2040,45 @@ const tile_C5Check = () => {
 
 // ROW D
 const tile_D1Check = () => {
-    
+    // 15
+    // left right
+    // 15,16,17,18,19
+    createChecks([charArray[15],charArray[16],charArray[17],charArray[18],charArray[19]]);
+
+    // diag \
+    // 
+    createChecks([charArray[15],charArray[21]],);
+
+    // up down
+    // 
+    createChecks([charArray[15],charArray[20]]);
+    createChecks([charArray[15],charArray[10],charArray[5],charArray[0]]);    
+
+    strictCheck([charArray[20],charArray[15],charArray[10]]);
+    strictCheck([charArray[20],charArray[15],charArray[10],charArray[5]]);
+    strictCheck([charArray[20],charArray[15],charArray[10],charArray[5],charArray[0]]);
+
+    // diag /
+    // 
+    createChecks([charArray[15],charArray[11],charArray[7],charArray[3]]);
 }
 const tile_D2Check = () => {
-    
+    // 16
+    // left right
+    // 
+    createChecks([charArray[16],charArray[15]]);
+    createChecks([charArray[16],charArray[17],charArray[18],charArray[19]]);
+
+    strictCheck([charArray[15],charArray[16],charArray[17]]);
+    strictCheck([charArray[15],charArray[16],charArray[17],charArray[18]]);
+    strictCheck([charArray[15],charArray[16],charArray[17],charArray[18],charArray[19]]);
+
+    // diag \
+    // 11,5 - 11,17,23 --- 5,11,17 - 5,11,17,23
+
+    // up down
+
+    // diag /
 }
 const tile_D3Check = () => {
     
