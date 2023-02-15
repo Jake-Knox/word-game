@@ -70,6 +70,38 @@ let charArray = ["","","","","","","","","","","","","","","","","","","","","",
 const player1Text = document.getElementById("player_1_text");
 const player2Text = document.getElementById("player_2_text");
 
+// keyboard
+const keyboardQ = document.getElementById("keyQ");
+const keyboardW = document.getElementById("keyW");
+const keyboardE = document.getElementById("keyE");
+const keyboardR = document.getElementById("keyR");
+const keyboardT = document.getElementById("keyT");
+const keyboardY = document.getElementById("keyY");
+const keyboardU = document.getElementById("keyU");
+const keyboardI = document.getElementById("keyI");
+const keyboardO = document.getElementById("keyO");
+const keyboardP = document.getElementById("keyP");
+const keyboardA = document.getElementById("keyA");
+const keyboardS = document.getElementById("keyS");
+const keyboardD = document.getElementById("keyD");
+const keyboardF = document.getElementById("keyF");
+const keyboardG = document.getElementById("keyG");
+const keyboardH = document.getElementById("keyH");
+const keyboardJ = document.getElementById("keyJ");
+const keyboardK = document.getElementById("keyK");
+const keyboardL = document.getElementById("keyL");
+const keyboardZ = document.getElementById("keyZ");
+const keyboardX = document.getElementById("keyX");
+const keyboardC = document.getElementById("keyC");
+const keyboardV = document.getElementById("keyV");
+const keyboardB = document.getElementById("keyB");
+const keyboardN = document.getElementById("keyN");
+const keyboardM = document.getElementById("keyM");
+
+const keyboardBackspace = document.getElementById("keyboard_backspace")
+const keyboardEnter = document.getElementById("keyboard_enter")
+
+
 const gameLog = document.getElementById("game_log");
 
 
