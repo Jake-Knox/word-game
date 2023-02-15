@@ -1845,7 +1845,28 @@ const tile_C4Check = () => {
 
 }
 const tile_C5Check = () => {
-    
+    // 14
+    // left right
+    // 
+    createChecks([charArray[14],charArray[13],charArray[12],charArray[11],charArray[10]]);
+
+    // diag \
+    // 
+    createChecks([charArray[14],charArray[8],charArray[2]]);
+
+    // up down
+    // 
+    createChecks([charArray[14],charArray[9],charArray[4]]);
+    createChecks([charArray[14],charArray[19],charArray[24]]);    
+
+    strictCheck([charArray[9],charArray[14],charArray[19]]);
+    strictCheck([charArray[9],charArray[14],charArray[19],charArray[24]]);
+    strictCheck([charArray[4],charArray[9],charArray[14],charArray[19]]);
+    strictCheck([charArray[4],charArray[9],charArray[14],charArray[19],charArray[24]]);
+
+    // diag /
+    //     
+    createChecks([charArray[14],charArray[18],charArray[22]]);
 }
 
 // ROW D
