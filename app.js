@@ -124,7 +124,7 @@ for(let i = 0; i < tileArray.length; i++){
 
         lastTileUsed.focus();    
         //console.log(lastTileUsed)
-        console.log(document.activeElement);
+        //console.log(document.activeElement);
 
         } 
     })
@@ -1703,18 +1703,146 @@ const tile_B5Check = () => {
 
 // ROW C
 const tile_C1Check = () => {
-    
+    // left right
+    // 10,11,12,13,14
+    createChecks([charArray[10],charArray[11],charArray[12],charArray[13],charArray[14]]);
+
+    // diag \
+    // 10,16,22
+    createChecks([charArray[10],charArray[16],charArray[22]],);
+
+    // up down
+    // 10,5,0 - 10,15,20 --- 5,10,15 - 0,5,10,15 5,10,15,20 - 0,5,10,15,20
+    createChecks([charArray[10],charArray[5],charArray[0]]);
+    createChecks([charArray[10],charArray[15],charArray[20]]);    
+
+    strictCheck([charArray[5],charArray[10],charArray[15]]);
+    strictCheck([charArray[5],charArray[10],charArray[15],charArray[20]]);
+    strictCheck([charArray[0],charArray[5],charArray[10],charArray[15]]);
+    strictCheck([charArray[0],charArray[5],charArray[10],charArray[15],charArray[20]]);
+
+    // diag /
+    // 10,6,2
+    createChecks([charArray[10],charArray[6],charArray[2]]);
 }
 const tile_C2Check = () => {
-    
+    // 11
+    // left right
+    // 
+    createChecks([charArray[11],charArray[10]]);
+    createChecks([charArray[11],charArray[12],charArray[13],charArray[14]]);
+
+    strictCheck([charArray[10],charArray[11],charArray[12]]);
+    strictCheck([charArray[10],charArray[11],charArray[12],charArray[13]]);
+    strictCheck([charArray[10],charArray[11],charArray[12],charArray[13],charArray[14]]);
+
+    // diag \
+    // 11,5 - 11,17,23 --- 5,11,17 - 5,11,17,23
+    createChecks([charArray[11],charArray[5]],);
+    createChecks([charArray[11],charArray[17],charArray[23]],);
+
+    strictCheck([charArray[5],charArray[11],charArray[17]]);
+    strictCheck([charArray[5],charArray[11],charArray[17],charArray[23]]);
+
+    // up down
+    // 11,6,1 - 1,16,21 --- 6,11,16 - 6,11,16,21 - 1,6,11,16 - 1,6,11,16,21
+    createChecks([charArray[11],charArray[6],charArray[1]]);
+    createChecks([charArray[11],charArray[16],charArray[21]]);    
+
+    strictCheck([charArray[6],charArray[11],charArray[16]]);
+    strictCheck([charArray[6],charArray[11],charArray[16],charArray[21]]);
+    strictCheck([charArray[1],charArray[6],charArray[11],charArray[16]]);
+    strictCheck([charArray[1],charArray[6],charArray[11],charArray[16],charArray[21]]);
+
+    // diag /
+    // 11,15 - 11,7,3 --- 15,11,7 - 15,11,7,3
+    createChecks([charArray[11],charArray[15]]);
+    createChecks([charArray[11],charArray[7],charArray[3]]);
+
+    strictCheck([charArray[15],charArray[11],charArray[7]]);
+    strictCheck([charArray[15],charArray[11],charArray[7],charArray[3]]);
+
 }
 const tile_C3Check = () => {
-    let inputArray = "";
-    // line indexes = 0,1,2,3,4
+    // 12
+    /// left right
+    // 12,13,14 - 12,11,10 --- 11,12,13 - 10,11,12,13 - 11,12,13,14 - 10,11,12,13,14
+    createChecks([charArray[12],charArray[13],charArray[14]]);
+    createChecks([charArray[12],charArray[11],charArray[10]]);
+
+    strictCheck([charArray[11],charArray[12],charArray[13]]);
+    strictCheck([charArray[11],charArray[12],charArray[13],charArray[14]]);
+    strictCheck([charArray[10],charArray[11],charArray[12],charArray[13]]); 
+    strictCheck([charArray[10],charArray[11],charArray[12],charArray[13],charArray[14]]);
+
+    // diag \
+    // 12,18,24 - 12,6,0 --- 6,12,18 - 0,6,12,18 - 6,12,18,24 - 0,6,12,18,24
+    createChecks([charArray[12],charArray[18],charArray[24]]);
+    createChecks([charArray[12],charArray[6],charArray[0]]);
+
+    strictCheck([charArray[6],charArray[12],charArray[18]]);
+    strictCheck([charArray[6],charArray[12],charArray[18],charArray[24]]);
+    strictCheck([charArray[0],charArray[6],charArray[12],charArray[18]]);    
+    strictCheck([charArray[0],charArray[6],charArray[12],charArray[18],charArray[24]]);
+
+    // up down
+    // 12,7,2 - 12,17,22 --- 7,12,17 - 7,12,17,22 - 2,7,12,17 -  2,7,12,17,22
+    createChecks([charArray[12],charArray[7],charArray[2]]);
+    createChecks([charArray[12],charArray[17],charArray[2]]);
+
+    strictCheck([charArray[7],charArray[12],charArray[17]]);
+    strictCheck([charArray[7],charArray[12],charArray[17],charArray[22]]);
+    strictCheck([charArray[2],charArray[7],charArray[12],charArray[17]]);    
+    strictCheck([charArray[2],charArray[7],charArray[12],charArray[17],charArray[22]]);
+
+    // diag /
+    // 12,8,4 - 12,16,20 --- 8,12,16 - 8,12,16,20 - 4,8,12,16,20
+    createChecks([charArray[12],charArray[8],charArray[4]]);
+    createChecks([charArray[12],charArray[16],charArray[20]]);
+
+    strictCheck([charArray[8],charArray[12],charArray[16]]);
+    strictCheck([charArray[8],charArray[12],charArray[16],charArray[20]]);
+    strictCheck([charArray[4],charArray[8],charArray[12],charArray[16]]);    
+    strictCheck([charArray[4],charArray[8],charArray[12],charArray[16],charArray[20]]);
     
 }
 const tile_C4Check = () => {
-    
+    // 13
+    // left right
+    // 
+    createChecks([charArray[13],charArray[14]]);
+    createChecks([charArray[13],charArray[12],charArray[11],charArray[10]]);
+
+    strictCheck([charArray[14],charArray[13],charArray[12]]);
+    strictCheck([charArray[14],charArray[13],charArray[12],charArray[11]]);
+    strictCheck([charArray[14],charArray[13],charArray[12],charArray[11],charArray[10]]);
+
+    // diag \
+    // 
+    createChecks([charArray[13],charArray[19]],);
+    createChecks([charArray[13],charArray[7],charArray[1]],);
+
+    strictCheck([charArray[19],charArray[13],charArray[7]]);
+    strictCheck([charArray[19],charArray[13],charArray[7],charArray[1]]);
+
+    // up down
+    // 
+    createChecks([charArray[13],charArray[8],charArray[3]]);
+    createChecks([charArray[13],charArray[18],charArray[23]]);    
+
+    strictCheck([charArray[8],charArray[13],charArray[18]]);
+    strictCheck([charArray[8],charArray[13],charArray[18],charArray[23]]);
+    strictCheck([charArray[3],charArray[8],charArray[13],charArray[18]]);
+    strictCheck([charArray[3],charArray[8],charArray[13],charArray[18],charArray[23]]);
+
+    // diag /
+    // 
+    createChecks([charArray[13],charArray[9]]);
+    createChecks([charArray[13],charArray[17],charArray[21]]);
+
+    strictCheck([charArray[9],charArray[13],charArray[17]]);
+    strictCheck([charArray[9],charArray[13],charArray[17],charArray[21]]);
+
 }
 const tile_C5Check = () => {
     
