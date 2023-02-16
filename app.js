@@ -1583,6 +1583,7 @@ const tile_A1Check = () => {
     // top ^-V bottom // line indexes = 0,5,10,15,20
     inputArray = [charArray[0], charArray[5], charArray[10], charArray[15], charArray[20]];
     createChecks(inputArray);
+    // diag /
 }
 
 const tile_A2Check = () => {    
@@ -1673,6 +1674,8 @@ const tile_A5Check = () => {
     // left right - line indexes = 4,3,2,1,0
     inputArray = [charArray[4], charArray[3], charArray[2], charArray[1], charArray[0]];
     createChecks(inputArray);
+    // diag \
+
     // up down - line indexes = 4,9,14,19,24
     inputArray = [charArray[4], charArray[9], charArray[14], charArray[19], charArray[24]];
     createChecks(inputArray);
@@ -2162,15 +2165,58 @@ const tile_D4Check = () => {
     strictCheck([charArray[22],charArray[18],charArray[14]]);
 }
 const tile_D5Check = () => {
-    
+    // 19
+    // left right
+    createChecks([charArray[19],charArray[18],charArray[17],charArray[16],charArray[15]]);
+
+    // diag \
+    createChecks([charArray[19],charArray[13],charArray[7],charArray[1]]);
+
+    // up down
+    createChecks([charArray[19],charArray[24]]);
+    createChecks([charArray[19],charArray[14],charArray[9],charArray[4]]);    
+
+    strictCheck([charArray[24],charArray[19],charArray[14]]);
+    strictCheck([charArray[24],charArray[19],charArray[14],charArray[9]]);
+    strictCheck([charArray[24],charArray[19],charArray[14],charArray[9],charArray[4]]);
+
+    // diag /
+    createChecks([charArray[19],charArray[23]],);
 }
 
 // ROW E
 const tile_E1Check = () => {
-    
+    // 20
+    // left right
+    createChecks([charArray[20],charArray[21],charArray[22],charArray[23],charArray[24]]);
+
+    // diag \    
+
+    // up down
+    createChecks([charArray[20],charArray[15],charArray[10],charArray[5],charArray[0]]);    
+
+    // diag /
+    createChecks([charArray[20],charArray[16],charArray[12],charArray[8],charArray[4]]);
 }
 const tile_E2Check = () => {
-    
+    // 21
+    // left right
+    createChecks([charArray[21],charArray[20]]);
+    createChecks([charArray[21],charArray[22],charArray[23],charArray[24]]);
+
+    strictCheck([charArray[20],charArray[21],charArray[22]]);
+    strictCheck([charArray[20],charArray[21],charArray[22],charArray[23]]);
+    strictCheck([charArray[20],charArray[21],charArray[22],charArray[23],charArray[24]]);
+
+    // diag \
+    createChecks([charArray[21],charArray[15]]);
+
+    // up down
+    createChecks([charArray[21],charArray[16],charArray[11],charArray[6],charArray[1]]);
+
+    // diag /
+    createChecks([charArray[21],charArray[17],charArray[13],charArray[9]]);
+
 }
 const tile_E3Check = () => {
     
