@@ -2065,7 +2065,6 @@ const tile_D1Check = () => {
 const tile_D2Check = () => {
     // 16
     // left right
-    // 
     createChecks([charArray[16],charArray[15]]);
     createChecks([charArray[16],charArray[17],charArray[18],charArray[19]]);
 
@@ -2074,17 +2073,93 @@ const tile_D2Check = () => {
     strictCheck([charArray[15],charArray[16],charArray[17],charArray[18],charArray[19]]);
 
     // diag \
-    // 11,5 - 11,17,23 --- 5,11,17 - 5,11,17,23
+    createChecks([charArray[16],charArray[22]]);
+    createChecks([charArray[16],charArray[10]]);
+    strictCheck([charArray[10],charArray[16],charArray[22]]);
 
     // up down
+    createChecks([charArray[16],charArray[21]]);
+    createChecks([charArray[16],charArray[11],charArray[6],charArray[1]]);
+
+    strictCheck([charArray[21],charArray[16],charArray[1]]);
+    strictCheck([charArray[21],charArray[16],charArray[1],charArray[6]]);
+    strictCheck([charArray[21],charArray[16],charArray[1],charArray[6],charArray[1]]);
 
     // diag /
+    createChecks([charArray[16],charArray[20]]);
+    createChecks([charArray[16],charArray[12],charArray[8],charArray[4]]);
+
+    strictCheck([charArray[20],charArray[16],charArray[12]]);
+    strictCheck([charArray[20],charArray[16],charArray[12],charArray[8]]);
+    strictCheck([charArray[20],charArray[16],charArray[12],charArray[8],charArray[4]]);
+
 }
 const tile_D3Check = () => {
-    
+     // 17
+    /// left right
+   
+    createChecks([charArray[17],charArray[18],charArray[19]]);
+    createChecks([charArray[17],charArray[16],charArray[15]]);
+
+    strictCheck([charArray[16],charArray[17],charArray[18]]);
+    strictCheck([charArray[16],charArray[17],charArray[18],charArray[19]]);
+    strictCheck([charArray[15],charArray[16],charArray[17],charArray[18]]); 
+    strictCheck([charArray[15],charArray[16],charArray[17],charArray[18],charArray[19]]);
+
+    // diag \
+    createChecks([charArray[17],charArray[23]]);
+    createChecks([charArray[17],charArray[11],charArray[5]]);
+
+    strictCheck([charArray[23],charArray[17],charArray[11]]);
+    strictCheck([charArray[23],charArray[17],charArray[1],charArray[5]]);
+
+    // up down
+    createChecks([charArray[17],charArray[22]]);
+    createChecks([charArray[17],charArray[12],charArray[7],charArray[2]]);
+
+    strictCheck([charArray[22],charArray[17],charArray[12]]);
+    strictCheck([charArray[22],charArray[17],charArray[12],charArray[7]]); 
+    strictCheck([charArray[22],charArray[17],charArray[12],charArray[7],charArray[2]]);
+
+    // diag /
+    createChecks([charArray[17],charArray[21]]);
+    createChecks([charArray[17],charArray[13],charArray[9]]);
+
+    strictCheck([charArray[21],charArray[17],charArray[13]]);
+    strictCheck([charArray[21],charArray[17],charArray[13],charArray[9]]); 
+
 }
 const tile_D4Check = () => {
-    
+    // 18
+    // left right
+    createChecks([charArray[18],charArray[19]]);
+    createChecks([charArray[18],charArray[17],charArray[16],charArray[15]]);
+
+    strictCheck([charArray[19],charArray[18],charArray[17]]);
+    strictCheck([charArray[19],charArray[18],charArray[17],charArray[16]]);
+    strictCheck([charArray[19],charArray[18],charArray[17],charArray[16],charArray[15]]);
+
+    // diag \
+    createChecks([charArray[18],charArray[24]]);
+    createChecks([charArray[18],charArray[12],charArray[6],charArray[0]]);
+
+    strictCheck([charArray[24],charArray[18],charArray[12]]);
+    strictCheck([charArray[24],charArray[18],charArray[12],charArray[6]]);
+    strictCheck([charArray[24],charArray[18],charArray[12],charArray[6],charArray[0]]);
+
+    // up down
+    createChecks([charArray[18],charArray[23]]);
+    createChecks([charArray[18],charArray[13],charArray[8],charArray[3]]);
+
+    strictCheck([charArray[23],charArray[18],charArray[13]]);
+    strictCheck([charArray[23],charArray[18],charArray[13],charArray[8]]);
+    strictCheck([charArray[23],charArray[18],charArray[13],charArray[8],charArray[3]]);
+
+    // diag /
+    createChecks([charArray[18],charArray[14]]);
+    createChecks([charArray[18],charArray[22]]);
+
+    strictCheck([charArray[22],charArray[18],charArray[14]]);
 }
 const tile_D5Check = () => {
     
