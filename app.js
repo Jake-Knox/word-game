@@ -204,7 +204,7 @@ for(let i = 0; i < tileArray.length; i++){
         
 }
 
-
+// listen for enter keypress wherever the user is on screen
 window.addEventListener("keypress", (logKey) => {    
     if (logKey.key == "Enter"){
         // console.log("enter");
@@ -214,8 +214,23 @@ window.addEventListener("keypress", (logKey) => {
     }
 })
 
-
-// set up keyboard
+// setup js keyboard enter and back buttons
+keyboardEnter.addEventListener("click", () => {
+    // code same as enter key press
+    if(moveMade == true){
+        endTurn();
+    }
+})
+keyboardBackspace.addEventListener("click", () => {
+    // code same as backspace key press
+    if(lastTileUsed != null){
+        lastTileUsed.innerHTML = (`<p></p>`)
+        lastTileUsed.style.backgroundColor = "#b2b7bb";
+        lastTileUsed.tabIndex = 1;                    
+        resetMove();          
+    } 
+})
+// set up js keyboard keys
 for (let i = 0; i< keyboardKeys.length; i++){
     keyboardKeys[i].addEventListener("click", () => {
         let keyVal = keyboardKeys[i].innerText;
@@ -324,24 +339,6 @@ for (let i = 0; i< keyboardKeys.length; i++){
         }
     })
 }
-
-keyboardEnter.addEventListener("click", () => {
-    // code same as enter key press
-    if(moveMade == true){
-        endTurn();
-    }
-})
-keyboardBackspace.addEventListener("click", () => {
-    // code same as backspace key press
-    if(lastTileUsed != null){
-        lastTileUsed.innerHTML = (`<p></p>`)
-        lastTileUsed.style.backgroundColor = "#b2b7bb";
-        lastTileUsed.tabIndex = 1;                    
-        resetMove();          
-    } 
-})
-
-
 
 const endTurn = () => {
     if(moveMade == true && lastTileUsed != null){
@@ -1569,9 +1566,10 @@ const logWord = (word) => {
 
 // tile checks
 // all 25 of em
+// Hopefully i can find a more effient way of getting these down
+// right now this section is a real eyesore
 
 // ROW A
-
 const tile_A1Check = () => {    
     let inputArray = ""; // start index = 0
     // left <-> right // line indexes = 0,1,2,3,4
@@ -1585,7 +1583,6 @@ const tile_A1Check = () => {
     createChecks(inputArray);
     // diag /
 }
-
 const tile_A2Check = () => {    
     let inputArray = ""; // start index = 1
     // left right - line indexes = 1,2,3,4
@@ -1818,7 +1815,6 @@ const tile_B3Check = () => {
 
 
 }
-
 // trying to reduce code by not using inputArray
 const tile_B4Check = () => {
     let inputArray = "";
@@ -2219,13 +2215,56 @@ const tile_E2Check = () => {
 
 }
 const tile_E3Check = () => {
-    
+    // 22
+    // left right
+    createChecks([charArray[22],charArray[23]],charArray[24]);
+    createChecks([charArray[22],charArray[21],charArray[20]]);
+
+    strictCheck([charArray[21],charArray[22],charArray[23]]);
+    strictCheck([charArray[21],charArray[22],charArray[23],charArray[24]]);
+    strictCheck([charArray[20],charArray[21],charArray[22],charArray[23]]);
+    strictCheck([charArray[20],charArray[21],charArray[22],charArray[23],charArray[24]]);
+
+    // diag \
+    createChecks([charArray[22],charArray[16],charArray[10]]);
+
+    // up down
+    createChecks([charArray[22],charArray[17],charArray[12],charArray[7],charArray[2]]);
+
+    // diag /
+    createChecks([charArray[22],charArray[18],charArray[14]]);
 }
 const tile_E4Check = () => {
-    
+    // 23
+    // left right
+    createChecks([charArray[23],charArray[24]]);
+    createChecks([charArray[23],charArray[22],charArray[21],charArray[20]]);
+
+    strictCheck([charArray[24],charArray[23],charArray[22]]);
+    strictCheck([charArray[24],charArray[23],charArray[22],charArray[21]]);
+    strictCheck([charArray[24],charArray[23],charArray[22],charArray[21],charArray[20]]);
+
+    // diag \
+    createChecks([charArray[23],charArray[17],charArray[11],charArray[5]]);
+
+    // up down
+    createChecks([charArray[23],charArray[18],charArray[13],charArray[8],charArray[3]]);
+
+    // diag /
+    createChecks([charArray[23],charArray[19]]);
 }
 const tile_E5Check = () => {
-    
+    // 23
+    // left right
+    createChecks([charArray[24],charArray[23],charArray[22],charArray[21],charArray[20]]);
+
+    // diag \
+    createChecks([charArray[24],charArray[18],charArray[12],charArray[6],charArray[0]]);
+
+    // up down
+    createChecks([charArray[24],charArray[19],charArray[14],charArray[9],charArray[4]]);
+
+    // diag /
 }
 
 
