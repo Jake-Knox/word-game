@@ -59,17 +59,21 @@ body{
     margin-bottom: 2vh;
 }
 
-h1{
+#title_section h1{
     height: 100%;
-    background-color: white;
+    /* background-color: white; */
     text-align: center;
     vertical-align: middle;    
-    line-height: 10.5vh;
-    /* border: 1px solid black; */    
+    line-height: 10vh;
+
+    /* border-left: 1px solid black;   */
+    
 }
 .dog_img{
     height: 100%;
     width: auto;
+    /* border-left: 1px solid black;    */
+
 }
 
 #container_5x5{
@@ -226,10 +230,20 @@ p{
     padding: 2px;
     margin: 1px;
 
-    background-color: lightcoral;
-    border-radius: 2px;
+    background-color: whitesmoke;
+    border-radius: 5px;
 
     line-height: 185%;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.keyboard_key:active{
+
+    background-color: lightgray;
+  
 }
 
 #keyboard_buttons_container{
@@ -240,6 +254,10 @@ p{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     
 }
 .keyboard_special{
@@ -255,10 +273,10 @@ p{
 
 }
 #keyboard_backspace{    
-    background-color: red;
+    background-color: palevioletred;
 }
 #keyboard_enter{    
-    background-color: lightgreen;
+    background-color: palegreen;
 }
 
 
